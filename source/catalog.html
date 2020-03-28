@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo" href="index.html">
+    <img alt="Логотип MISHKA" class="page-header__logo-image" height="35" src="https://via.placeholder.com/150x150"
+         width="86">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <ul class="visually-hidden menu-list">
+      <li class="menu-list__item"><a href="#">Каталог товаров</a></li>
+      <li class="menu-list__item"><a href="#">Вязание на заказ</a></li>
+      <li class="menu-list__item"><a href="#">
+        <svg class="menu-list__icon" height="17.6" viewBox="-0.8 -0.8 17.6 17.6" width="17.6" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.47 14.93l-3.415-3.415c.965-1.289 1.545-2.881 1.545-4.616C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33.607 0 1.1-.492 1.1-1.1 0-.24-.061-.499-.33-.769zM1.399 6.899c0-3.038 2.462-5.5 5.5-5.5s5.5 2.462 5.5 5.5-2.462 5.5-5.5 5.5-5.5-2.461-5.5-5.5z" fill="#231F20"/>
+        </svg>Поиск по сайту</a></li>
+      <li class="menu-list__item"><a href="#">
+        <svg class="menu-list__icon" height="18.849" viewBox="264.205 370.961 20.294 18.849" width="20.294" xmlns="http://www.w3.org/2000/svg">
+          <path d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z" fill="#231F20"/>
+        </svg>Корзина: пока пуста</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="catalog">
+    <div class="catalog__header">
+      <h1 class="catalog__title">Каталог товаров</h1>
+    </div>
+    <ul class="catalog__list products">
+      <li class="products__item">
+        <div class="products__img-wrapper"><img alt="Зайчик-попрыгайчик" class="products__img" height="195" src="https://via.placeholder.com/150x150" width="260"></div>
+        <h2 class="products__title"><a href="#">Зайчик-попрыгайчик</a></h2>
+        <p class="products__text">Рост 30 см, вес 200 г</p>
+        <div class="products__cart">
+          <span class="products__price"><b>1 200 руб.</b></span>
+          <a class="products__cart-link" href="#">
+            <svg class="products__cart-icon" height="18.849" viewBox="264.205 370.961 20.294 18.849" width="20.294" xmlns="http://www.w3.org/2000/svg">
+              <path d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z" fill="#231F20"/>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="products__img-wrapper"><img alt="Корзинка для белья" class="products__img" height="195" src="https://via.placeholder.com/150x150" width="260"></div>
+        <h2 class="products__title"><a href="#">Корзинка для белья</a></h2>
+        <p class="products__text">Диаметр 15 см, высота 10 см</p>
+        <div class="products__cart">
+          <span class="products__price"><b>690 руб.</b></span>
+          <a class="products__cart-link" href="#">
+            <svg class="products__cart-icon" height="18.849" viewBox="264.205 370.961 20.294 18.849" width="20.294" xmlns="http://www.w3.org/2000/svg">
+              <path d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z" fill="#231F20"/>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="products__img-wrapper"><img alt="Большая корзинка для игрушек" class="products__img" height="195" src="https://via.placeholder.com/150x150" width="260"></div>
+        <h2 class="products__title"><a href="#">Большая корзинка для игрушек</a></h2>
+        <p class="products__text">Диаметр 30 см, высота 30 см</p>
+        <div class="products__cart">
+          <span class="products__price"><b>1 500 руб.</b></span>
+          <a class="products__cart-link" href="#">
+            <svg class="products__cart-icon" height="18.849" viewBox="264.205 370.961 20.294 18.849" width="20.294" xmlns="http://www.w3.org/2000/svg">
+              <path d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z" fill="#231F20"/>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wallpaper">
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#" title="Instagram">Instagram</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#" title="Facebook">Facebook</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#" title="Twitter">Twitter</a>
+      </li>
+    </ul>
+
+    <div class="page-footer__developer developer">
+      <a class="developer__text">Разработано
+        <svg class="developer__icon" height="34.09" viewBox="0 0 26.943 34.09" width="26.943" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
