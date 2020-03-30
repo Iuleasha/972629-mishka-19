@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__link" href="index.html">
+    <img alt="Логотип MISHKA" class="page-header__logo" height="35" src="https://via.placeholder.com/150x150" width="86">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <ul class="main-nav__lis">
+      <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+      <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+      <li class="main-nav__item">
+        <a href="#">
+          <img alt="Лупа" class="menu-list__icon" height="18" src="img/search-svg.svg" width="18">
+          Поиск по сайту
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">
+          <img alt="Корзина" class="main-nav__icon" height="19" src="img/cart-svg.svg" width="20">
+          Корзина: пока пуста
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="subtitle">
+    <h1 class="subtitle__text">Каталог товаров</h1>
+  </section>
+
+  <section class="catalog">
+    <ul class="catalog__list products">
+      <li class="products__item">
+        <a class="products__img-wrapper" href="#">
+          <img alt="Зайчик-попрыгайчик" class="products__img" height="195" src="https://via.placeholder.com/150x150" width="260">
+        </a>
+        <div class="products__content">
+          <a class="products__title" href="#">Зайчик-попрыгайчик</a>
+          <p class="products__text">Рост 30 см, вес 200 г</p>
+          <div class="products__cart">
+            <span class="products__price">1 200 руб.</span>
+            <a class="products__link" href="#">
+              <img alt="Корзина" height="19" src="img/cart-svg.svg" width="20">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="products__item">
+        <a class="products__img-wrapper" href="#">
+          <img alt="Корзинка для белья" class="products__img" height="195" src="https://via.placeholder.com/150x150" width="260">
+        </a>
+        <div class="products__content">
+          <a class="products__title" href="#">Корзинка для белья</a>
+          <p class="products__text">Диаметр 15 см, высота 10 см</p>
+          <div class="products__cart">
+            <span class="products__price">690 руб.</span>
+            <a class="products__cart-link" href="#">
+              <img alt="Корзина" class="products__cart-icon" height="19" src="img/cart-svg.svg" width="20">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="products__item">
+        <a class="products__img-wrapper" href="#">
+          <img alt="Большая корзинка для игрушек" class="products__img" height="195" src="https://via.placeholder.com/150x150" width="260">
+        </a>
+        <div class="products__content">
+          <a class="products__title" href="#">Большая корзинка для игрушек</a>
+          <p class="products__text">Диаметр 30 см, высота 30 см</p>
+          <div class="products__cart">
+            <span class="products__price">1 500 руб.</span>
+            <a class="products__cart-link" href="#">
+              <img alt="Корзина" class="products__cart-icon" height="19" src="img/cart-svg.svg" width="20">
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wallpaper">
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#" title="Instagram">Instagram</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#" title="Facebook">Facebook</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#" title="Twitter">Twitter</a>
+      </li>
+    </ul>
+
+    <div class="page-footer__developer">
+      <a href="index.html" class="page-footer__text">Разработано
+        <img alt="Логотип HTML" height="34" src="img/htmlacademy-svg.svg" width="27">
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
