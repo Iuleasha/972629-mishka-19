@@ -30,6 +30,94 @@
     </ul>
   </nav>
 </header>
+<main>
+  <section class="subtitle">
+    <h1 class="subtitle__text">Вязание на заказ</h1>
+  </section>
+
+  <section class="form">
+    <h2 class="visually-hidden">Форма заказа</h2>
+    <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+    <form action="https://echo.htmlacademy.ru" class="form__wrapper" method="get">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Тип</legend>
+        <label class="form__label type">
+          <input checked class="type__item type__item--radio" name="type" type="radio" value="on">
+          <span>Аксессуар для интерьера</span>
+        </label>
+        <label class="form__label type">
+          <input class="type__item type__item--radio" name="type" type="radio" value="off">
+          <span>Детская игрушка</span>
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset type">
+        <legend class="form__legend">Цвет</legend>
+        <label class="form__label type">
+          <input checked class="type__item type__item--checkbox" name="white" type="checkbox">
+          <span>Белый</span>
+        </label>
+        <label class="form__label type">
+          <input checked class="type__item type__item--checkbox" name="grey" type="checkbox">
+          <span>Серый</span>
+        </label>
+        <label class="form__label type">
+          <input class="type__item type__item--checkbox" name="tiffany" type="checkbox">
+          <span>«Тиффани»</span>
+        </label>
+        <label class="form__label type">
+          <input class="type__item type__item--checkbox" name="black" type="checkbox">
+          <span>Черный</span>
+        </label>
+        <label class="form__label type">
+          <input class="type__item type__item--checkbox" name="pink" type="checkbox">
+          <span>Розовый</span>
+        </label>
+        <label class="form__label type">
+          <input class="type__item type__item--checkbox" name="orange" type="checkbox">
+          <span>Оранжевый</span>
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">фио</legend>
+        <label class="form__label type">
+          <span>Имя:</span>
+          <input class="type__item" placeholder="Введите ваше имя*" type="text">
+        </label>
+        <label class="form__label type">
+          <span>Фамилия:</span>
+          <input class="type__item" placeholder="Укажите фамилию*" type="text">
+        </label>
+        <label class="form__label type">
+          <span>Отчество:</span>
+          <input class="type__item" placeholder="Отчество, если желаете" type="text">
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label class="form__legend label-form">
+          <span>тел</span>
+          <input class="label-form__item" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel">
+          <img alt="Телефон" class="label-form__icon" height="24" src="https://via.placeholder.com/150x150" width="25">
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label class="form__legend label-form">
+          <span>E-mail</span>
+          <input class="label-form__item" placeholder="Ваш Email*" type="email">
+          <img alt="Конверт" class="label-form__icon" height="21" src="https://via.placeholder.com/150x150" width="32">
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label class="form__legend label-form">
+          <span>Доп</span>
+          <textarea class="label-form__item" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </label>
+      </fieldset>
+      <small class="form__footnotes">*Поля обязательны для заполнения</small>
+      <button class="form__button btn" type="submit">Отправить заказ</button>
+    </form>
+  </section>
+</main>
 
 <footer class="page-footer">
   <div class="page-footer__wallpaper">
@@ -46,11 +134,11 @@
     </ul>
 
     <div class="page-footer__developer">
-      <a href="index.html" class="page-footer__text">Разработано
+      <a class="page-footer__text" href="index.html">Разработано
         <img alt="Логотип HTML" height="34" src="img/htmlacademy-svg.svg" width="27">
       </a>
     </div>
   </div>
 </footer>
-  </body>
+</body>
 </html>
