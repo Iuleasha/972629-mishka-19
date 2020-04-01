@@ -35,78 +35,72 @@
     <h1 class="subtitle__text">Вязание на заказ</h1>
   </section>
 
-  <section class="desc">
-    <h2 class="visually-hidden">Обратная связь через формы</h2>
-  </section>
-
   <section class="form">
-    <p class="form_description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <h2 class="visually-hidden">Форма заказа</h2>
+    <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
     <form class="form__wrapper" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="form__fieldset">
         <legend class="form__legend">Тип</legend>
-          <ul class="form__type">
-            <li class="form__item">
-              <input class="" type="radio" name="type" value="on" id="type-on" checked>
-              <label for="type-on">Аксессуар для интерьера</label>
-            </li>
-            <li class="form__item">
-              <input class="" type="radio" name="type" value="off" id="type-off">
-              <label for="type-off">Детская игрушка</label>
-            </li>
-          </ul>
+        <label class="form__label type" for="type-on">
+              <input class="type__item--radio" type="radio" name="type" value="on" id="type-on" checked>
+              Аксессуар для интерьера
+        </label>
+        <label class="form__label type" for="type-off">
+              <input class="type__item--radio" type="radio" name="type" value="off" id="type-off">
+              Детская игрушка
+        </label>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset type">
         <legend class="form__legend">Цвет</legend>
-        <ul class="form__color">
-          <li class="form__item">
-            <input type="checkbox" name="white" id="filter-white" checked>
-            <label for="filter-white">Белый</label>
-          </li>
-          <li class="form__item">
-            <input type="checkbox" name="grey" id="filter-grey" checked>
-            <label for="filter-grey">Серый</label>
-          </li>
-          <li class="form__item">
-            <input type="checkbox" name="tiffany" id="filter-tiffany">
-            <label for="filter-tiffany">«Тиффани»</label>
-          </li>
-          <li class="form__item">
-            <input type="checkbox" name="black" id="filter-black">
-            <label for="filter-black">Черный</label>
-          </li>
-          <li class="form__item">
-            <input type="checkbox" name="pink" id="filter-pink">
-            <label for="filter-pink">Розовый</label>
-          </li>
-          <li class="form__item">
-            <input type="checkbox" name="orange" id="filter-orange" >
-            <label for="filter-orange">Оранжевый</label>
-          </li>
-        </ul>
+        <label class="form__label type"  for="filter-white">
+            <input class="type__item--checkbox" type="checkbox" name="white" id="filter-white" checked>
+          Белый
+        </label>
+        <label class="form__label type"  for="filter-grey">
+            <input class="type__item--checkbox" type="checkbox" name="grey" id="filter-grey" checked>
+            Серый
+        </label>
+        <label class="form__label type"  for="filter-tiffany">
+            <input class="type__item--checkbox" type="checkbox" name="tiffany" id="filter-tiffany">
+            «Тиффани»
+        </label>
+        <label class="form__label type" for="filter-black">
+            <input class="type__item--checkbox" type="checkbox" name="black" id="filter-black">
+            Черный
+        </label>
+        <label class="form__label type" for="filter-pink">
+            <input class="type__item--checkbox" type="checkbox" name="pink" id="filter-pink">
+            Розовый
+        </label>
+        <label class="form__label type" for="filter-orange">
+            <input class="type__item--checkbox" type="checkbox" name="orange" id="filter-orange" >
+            Оранжевый
+        </label>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">фио</legend>
-        <label for="name">Имя:</label>
-        <input type="text" id="name" placeholder="Введите ваше имя*">
-        <label for="surname">Фамилия:</label>
-        <input type="text" id="surname" placeholder="Укажите фамилию*">
-        <label for="patronymic">Отчество:</label>
-        <input type="text" id="patronymic" placeholder="Отчество, если желаете">
+        <label class="form__label type" for="name">Имя:</label>
+        <input class="type__item" type="text" id="name" placeholder="Введите ваше имя*">
+        <label class="form__label type" for="surname">Фамилия:</label>
+        <input class="type__item" type="text" id="surname" placeholder="Укажите фамилию*">
+        <label class="form__label type" for="patronymic">Отчество:</label>
+        <input class="type__item" type="text" id="patronymic" placeholder="Отчество, если желаете">
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend">тел</legend>
-        <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-        <img class="form__img" src="https://via.placeholder.com/150x150" width="25" height="24" alt="Телефон">
+        <label class="form__legend label-form" for="tel">тел</label>
+        <input class="label-form__item" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel">
+        <img class="label-form__icon" src="https://via.placeholder.com/150x150" width="25" height="24" alt="Телефон">
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend">E-mail</legend>
-        <input type="email" placeholder="Ваш Email*">
-        <img class="form__img" src="https://via.placeholder.com/150x150" width="32" height="21" alt="Конверт">
+        <label class="form__legend label-form" for="email">E-mail</label>
+        <input class="label-form__item" type="email" placeholder="Ваш Email*" id="email">
+        <img class="label-form__icon" src="https://via.placeholder.com/150x150" width="32" height="21" alt="Конверт">
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Доп</legend>
-        <textarea name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <label class="form__legend label-form">Доп
+        <textarea class="label-form__item" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </label>
       </fieldset>
       <small class="form__footnotes">
         <sup>*</sup>Поля обязательны для заполнения
