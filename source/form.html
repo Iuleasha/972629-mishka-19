@@ -39,78 +39,78 @@
     <h2 class="visually-hidden">Форма заказа</h2>
     <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-    <form class="form__wrapper" method="get" action="https://echo.htmlacademy.ru">
+    <form action="https://echo.htmlacademy.ru" class="form__wrapper" method="get">
       <fieldset class="form__fieldset">
         <legend class="form__legend">Тип</legend>
-        <label class="form__label type" for="type-on">
-              <input class="type__item--radio" type="radio" name="type" value="on" id="type-on" checked>
-              Аксессуар для интерьера
+        <label class="form__label type">
+          <input checked class="type__item--radio" name="type" type="radio" value="on">
+          <span>Аксессуар для интерьера</span>
         </label>
-        <label class="form__label type" for="type-off">
-              <input class="type__item--radio" type="radio" name="type" value="off" id="type-off">
-              Детская игрушка
+        <label class="form__label type">
+          <input class="type__item--radio" name="type" type="radio" value="off">
+          <span>Детская игрушка</span>
         </label>
       </fieldset>
       <fieldset class="form__fieldset type">
         <legend class="form__legend">Цвет</legend>
-        <label class="form__label type"  for="filter-white">
-            <input class="type__item--checkbox" type="checkbox" name="white" id="filter-white" checked>
-          Белый
+        <label class="form__label type">
+          <input checked class="type__item--checkbox" name="white" type="checkbox">
+          <span>Белый</span>
         </label>
-        <label class="form__label type"  for="filter-grey">
-            <input class="type__item--checkbox" type="checkbox" name="grey" id="filter-grey" checked>
-            Серый
+        <label class="form__label type">
+          <input checked class="type__item--checkbox" name="grey" type="checkbox">
+          <span>Серый</span>
         </label>
-        <label class="form__label type"  for="filter-tiffany">
-            <input class="type__item--checkbox" type="checkbox" name="tiffany" id="filter-tiffany">
-            «Тиффани»
+        <label class="form__label type">
+          <input class="type__item--checkbox" name="tiffany" type="checkbox">
+          <span>«Тиффани»</span>
         </label>
-        <label class="form__label type" for="filter-black">
-            <input class="type__item--checkbox" type="checkbox" name="black" id="filter-black">
-            Черный
+        <label class="form__label type">
+          <input class="type__item--checkbox" name="black" type="checkbox">
+          <span>Черный</span>
         </label>
-        <label class="form__label type" for="filter-pink">
-            <input class="type__item--checkbox" type="checkbox" name="pink" id="filter-pink">
-            Розовый
+        <label class="form__label type">
+          <input class="type__item--checkbox" name="pink" type="checkbox">
+          <span>Розовый</span>
         </label>
-        <label class="form__label type" for="filter-orange">
-            <input class="type__item--checkbox" type="checkbox" name="orange" id="filter-orange" >
-            Оранжевый
+        <label class="form__label type">
+          <input class="type__item--checkbox" name="orange" type="checkbox">
+          <span>Оранжевый</span>
         </label>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">фио</legend>
-        <label class="form__label type" for="name">Имя:
-        <input class="type__item" type="text" id="name" placeholder="Введите ваше имя*">
+        <label class="form__label type"><span>Имя:</span>
+          <input class="type__item" placeholder="Введите ваше имя*" type="text">
         </label>
-        <label class="form__label type" for="surname">Фамилия:
-        <input class="type__item" type="text" id="surname" placeholder="Укажите фамилию*">
+        <label class="form__label type"><span>Фамилия:</span>
+          <input class="type__item" placeholder="Укажите фамилию*" type="text">
         </label>
-        <label class="form__label type" for="patronymic">Отчество:
-        <input class="type__item" type="text" id="patronymic" placeholder="Отчество, если желаете">
-        </label>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <label class="form__legend label-form" for="tel">тел
-        <input class="label-form__item" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel">
-        <img class="label-form__icon" src="https://via.placeholder.com/150x150" width="25" height="24" alt="Телефон">
+        <label class="form__label type"><span>Отчество:</span>
+          <input class="type__item" placeholder="Отчество, если желаете" type="text">
         </label>
       </fieldset>
       <fieldset class="form__fieldset">
-        <label class="form__legend label-form" for="email">E-mail
-        <input class="label-form__item" type="email" placeholder="Ваш Email*" id="email">
-        <img class="label-form__icon" src="https://via.placeholder.com/150x150" width="32" height="21" alt="Конверт">
+        <label class="form__legend label-form"><span>тел</span>
+          <input class="label-form__item" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel">
+          <img alt="Телефон" class="label-form__icon" height="24" src="https://via.placeholder.com/150x150" width="25">
         </label>
       </fieldset>
       <fieldset class="form__fieldset">
-        <label class="form__legend label-form">Доп
-        <textarea class="label-form__item" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <label class="form__legend label-form"><span>E-mail</span>
+          <input class="label-form__item" placeholder="Ваш Email*" type="email">
+          <img alt="Конверт" class="label-form__icon" height="21" src="https://via.placeholder.com/150x150" width="32">
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label class="form__legend label-form"><span>Доп</span>
+          <textarea class="label-form__item" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </label>
       </fieldset>
       <small class="form__footnotes">
         <sup>*</sup>Поля обязательны для заполнения
       </small>
-      <button type="button" class="form__button btn">Отправить заказ</button>
+      <button class="form__button btn" type="button">Отправить заказ</button>
     </form>
   </section>
 </main>
@@ -130,11 +130,11 @@
     </ul>
 
     <div class="page-footer__developer">
-      <a href="index.html" class="page-footer__text">Разработано
+      <a class="page-footer__text" href="index.html">Разработано
         <img alt="Логотип HTML" height="34" src="img/htmlacademy-svg.svg" width="27">
       </a>
     </div>
   </div>
 </footer>
-  </body>
+</body>
 </html>
