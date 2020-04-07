@@ -19,12 +19,13 @@
   width: 100%;
   align-items: center;
   margin-bottom: 25px;
+
   &--margin,
-  &--line{
+  &--line {
     margin-bottom: 10px;
   }
 
-  &:after {
+  &::after {
     content: "";
     display: block;
     width: 100%;
@@ -33,7 +34,7 @@
     margin-left: 21px;
   }
 
-  &--line:after {
+  &--line::after {
     width: 69%;
   }
 }
@@ -62,9 +63,6 @@
 
 .type {
   padding-bottom: 24px;
-}
-
-.type__item input::placeholder {
 }
 
 .label-form {
