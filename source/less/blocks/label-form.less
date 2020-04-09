@@ -1,0 +1,54 @@
+.label-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+  position: relative;
+
+  &--input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid @goshawkGrey;
+    height: 52px;
+    font-size: 17px;
+    line-height: 18px;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: @seaBlue;
+    }
+  }
+
+
+  &--textarea {
+    outline: none;
+    border: 2px solid @goshawkGrey;
+    font-size: 17px;
+    line-height: 18px;
+    padding: 18px 17px;
+    width: 260px;
+    height: 142px;
+    font-family: "Open Sans", "Arial", sans-serif;
+
+    &:hover,
+    &:focus {
+      border-color: @seaBlue;
+    }
+  }
+}
+
+.label-form__item {
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.label-form__icon {
+  fill-opacity: 0.2;
+  position: absolute;
+  top: 12px;
+  right: 7px;
+}

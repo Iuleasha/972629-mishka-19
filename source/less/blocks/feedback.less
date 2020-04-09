@@ -1,0 +1,49 @@
+.feedback {
+  .zigzagLine();
+  padding: @wrapperPadding;
+  padding-top: 7px;
+}
+
+.feedback__title {
+  margin: 0;
+}
+
+.feedback__item {
+  margin: 0;
+}
+
+.feedback__text {
+  margin: 38px 0 40px;
+}
+
+.feedback__author {
+  &--name {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: inherit;
+  }
+
+  &--email {
+    margin: 0;
+  }
+}
+
+.feedback__wrapper-btn {
+  margin: 36px 0 38px;
+  display: flex;
+}
+
+.feedback__button {
+  border: solid 1px @whiteTwo;
+  background-color: @white;
+  width: 50%;
+  height: 52px;
+  background-image: url("../../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--right {
+    transform: rotate(180deg);
+    border-right: none;
+  }
+}
