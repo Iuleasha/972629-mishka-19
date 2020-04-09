@@ -22,9 +22,6 @@
     }
   }
 
-  &__item::placeholder {
-    opacity: 0.3;
-  }
 
   &--textarea {
     outline: none;
@@ -40,6 +37,12 @@
     &:focus {
       border-color: @seaBlue;
     }
+  }
+}
+
+.label-form__item {
+  &::placeholder {
+    opacity: 0.3;
   }
 }
 
