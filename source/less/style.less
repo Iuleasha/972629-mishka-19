@@ -1,9 +1,10 @@
-@import "vareables";
+@import "_vareables";
+@import "_mixin";
 @import "font-family";
 @import "visually-hidden.less";
 @import "content.less";
-@import "header";
-@import "nav.less";
+@import "page-header";
+@import "main-nav.less";
 @import "main-header";
 @import "goods";
 @import "advantages";
@@ -11,21 +12,9 @@
 @import "contacts";
 @import "footer";
 @import "catalog";
-@import "present";
+@import "presentation";
 @import "form";
-
-.wrapper() {
-  min-width: 322px;
-  padding: 0 30px;
-}
-
-.zigzagLine() {
-  background: url("../img/bg-zigzag-line.svg") center bottom;
-  background-repeat: repeat no-repeat;
-  background-size: 87%;
-}
-
-.catalogLine() {
-  border: 1px solid #ececec;
-  margin-bottom: 30px;
-}
+@import "subtitle";
+@import "button";
+@import "social";
+@import "label-form";

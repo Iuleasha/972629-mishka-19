@@ -4,7 +4,7 @@
   width: 20px;
   height: 14px;
   background-image: url("../img/icon-menu-open.svg");
-  background-color: #ffffff;
+  background-color: @white;
   border: none;
   position: absolute;
   top: 40px;
@@ -18,39 +18,36 @@
 
 .main-nav__list {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  .listStyle();
 }
 
-.main-nav__list a {
+.main-nav__link {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: @black;
   text-align: left;
   padding-left: 30px;
 }
 
 .main-nav__item {
-  list-style: none;
-  border: 1px solid #ececec;
+  border: 1px solid @whiteTwo;
   border-bottom: none;
   height: 79px;
   padding-left: 45px;
   align-items: center;
   display: flex;
+
+  &--padding {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid @whiteTwo;
+    padding-left: 0;
+  }
 }
 
-.main-nav__item:nth-child(3) {
-  padding-left: 0;
-}
-
-.main-nav__item:last-child {
-  border-bottom: 1px solid #ececec;
-  padding-left: 0;
-}
-
-.menu-list__icon,
 .main-nav__icon {
   margin-right: 25px;
 }
