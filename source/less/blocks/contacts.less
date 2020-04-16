@@ -12,14 +12,11 @@
 
 .contacts__text {
   width: 78px;
+  margin: 0;
 }
 
 .contacts__email {
   border-bottom: 1px solid @seaBlue;
-}
-
-.contacts__text {
-  margin: 0;
 }
 
 .contacts__address {
@@ -33,7 +30,6 @@
 
 .contacts__map {
   height: 457px;
-
 }
 
 .contacts__iframe {
@@ -66,7 +62,7 @@
     justify-content: space-between;
     align-items: center;
 
-    &:after {
+    &::after {
       content: "";
       display: block;
       width: 47px;
@@ -125,7 +121,7 @@
     padding-top: 39px;
     padding-bottom: 41px;
 
-    &:after {
+    &::after {
       margin-right: 64px;
     }
   }

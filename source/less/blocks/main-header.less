@@ -6,7 +6,6 @@
   position: relative;
 }
 
-
 .main-header__title {
   font-size: 27px;
   line-height: 30px;
@@ -73,10 +72,10 @@
     padding: @wrapperPaddingTablet;
     margin-bottom: 43px;
 
-    &:after {
+    &::after {
       content: "";
       display: block;
-      background: url(../img/bg-zigzag-fill.svg) repeat;
+      background: url("../img/bg-zigzag-fill.svg") repeat;
       background-position: center;
       background-size: cover;
       width: 100%;
@@ -114,7 +113,7 @@
     .wrapperContent();
     margin-bottom: 71px;
 
-    &:after {
+    &::after {
       height: 34px;
       bottom: -16px;
     }
