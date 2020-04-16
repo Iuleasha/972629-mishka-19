@@ -3,7 +3,7 @@
   padding: 0;
   width: 20px;
   height: 14px;
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
   background-color: @white;
   border: none;
   position: absolute;
@@ -19,35 +19,36 @@
 .main-nav__list {
   width: 100%;
   .listStyle();
-}
-
-.main-nav__link {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   color: @black;
-  text-align: left;
-  padding-left: 30px;
 }
 
-.main-nav__item {
-  border: 1px solid @whiteTwo;
-  border-bottom: none;
-  height: 79px;
-  padding-left: 45px;
-  align-items: center;
-  display: flex;
-
-  &--padding {
-    padding-left: 0;
+@media (min-width: @tabletWidth) {
+  .main-nav__toggle {
+    display: none;
   }
 
-  &:last-child {
-    border-bottom: 1px solid @whiteTwo;
-    padding-left: 0;
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__list {
+    font-size: 15px;
   }
 }
 
-.main-nav__icon {
-  margin-right: 25px;
+@media (min-width: @desktopWidth) {
+  .main-nav {
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+  }
+
+  .main-nav__list {
+    font-size: 17px;
+    line-height: 24px;
+  }
 }

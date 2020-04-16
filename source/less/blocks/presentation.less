@@ -1,6 +1,8 @@
 .presentation {
   margin: 0 30px 58px 30px;
   border: 1px solid @whiteTwo;
+  display: flex;
+  flex-direction: column;
 }
 
 .presentation__title {
@@ -15,6 +17,11 @@
   padding: 29px 34px 26px 34px;
   display: flex;
   align-items: center;
+  order: 1;
+}
+
+.presentation__video {
+  order: 2;
 }
 
 .presentation__icon {
@@ -27,9 +34,77 @@
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
+  order: 3;
 }
 
 .presentation__button {
   margin: 0 34px 33px 34px;
   width: 192px;
+  order: 4;
+}
+
+@media (min-width: @tabletWidth) {
+  .presentation {
+    margin: @wrapperPaddingTablet;
+    align-items: center;
+    margin-bottom: 63px;
+  }
+
+  .presentation__description {
+    border-top: 1px solid #ececec;
+    padding: 39px 42px 46px;
+    width: 367px;
+  }
+
+  .presentation__wrapper {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+
+  .presentation__title {
+    font-size: 20px;
+  }
+
+  .presentation__text {
+    padding: 0;
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 40px;
+  }
+
+  .presentation__button {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .presentation {
+    .wrapperContent();
+    flex-direction: row;
+    margin-bottom: 105px;
+  }
+
+  .presentation__description {
+    border-top: none;
+  }
+
+  .presentation__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .presentation__title {
+    padding-top: 20px;
+    padding-right: 41px;
+  }
+
+  .presentation__video-wrapper {
+    min-width: 682px;
+    height: 455px;
+  }
+
+  .presentation__button {
+    width: 230px;
+  }
 }

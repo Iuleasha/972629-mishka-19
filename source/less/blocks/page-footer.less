@@ -20,3 +20,31 @@
 .page-footer__img {
   margin-left: 30px;
 }
+
+@media (min-width: @tabletWidth) {
+  .page-footer__content {
+    padding: 51px 52px;
+    display: flex;
+    justify-content: space-between;
+
+    &--logo::before {
+      content: "";
+      display: block;
+      width: 102px;
+      height: 34px;
+      background: url("../img/logo-footer.svg") no-repeat;
+      margin-right: 80px;
+    }
+  }
+
+  .page-footer__developer {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .page-footer__content {
+    .wrapperContent();
+    padding: 51px 0 58px;
+  }
+}

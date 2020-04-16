@@ -11,3 +11,48 @@
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
+@media (min-width: @tabletWidth) {
+  .subtitle {
+    padding: @wrapperPaddingTablet;
+    position: relative;
+    margin-bottom: 67px;
+
+    &::after {
+      content: "";
+      display: block;
+      background: url("../img/bg-zigzag-fill.svg") repeat center;
+      background-size: cover;
+      width: 100%;
+      height: 23px;
+      position: absolute;
+      bottom: -13px;
+      left: 0;
+    }
+  }
+
+  .subtitle__text {
+    .fontSize();
+    padding-bottom: 89px;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .subtitle {
+    margin-bottom: 111px;
+
+    &::after {
+      height: 34px;
+      bottom: -16px;
+    }
+  }
+
+  .subtitle__wrapper {
+    .wrapperContent();
+  }
+
+  .subtitle__text {
+    .fontSizeDescktop();
+    padding-bottom: 116px;
+  }
+}
