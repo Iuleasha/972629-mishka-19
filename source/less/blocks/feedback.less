@@ -38,12 +38,101 @@
   background-color: @white;
   width: 50%;
   height: 52px;
-  background-image: url("../../img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
   &--right {
     transform: rotate(180deg);
     border-right: none;
+  }
+}
+
+@media (min-width: @tabletWidth) {
+  .feedback {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: auto 100%;
+    padding: @wrapperPaddingTablet;
+  }
+
+  .feedback__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 79px;
+    padding-bottom: 53px;
+  }
+
+  .feedback__title {
+    .fontSize();
+
+  }
+
+  .feedback__text {
+    font-size: 17px;
+    margin: 0;
+    padding-top: 53px;
+    padding-bottom: 58px;
+  }
+
+  .feedback__link {
+    font-size: 17px;
+    line-height: 20px;
+    order: 1;
+    width: 175px;
+  }
+
+  .feedback__list {
+    order: 2;
+  }
+
+  .feedback__wrapper-btn {
+    margin: 0;
+    position: absolute;
+    bottom: 65px;
+    right: 19px;
+  }
+
+  .feedback__button {
+    width: 50px;
+    height: 26px;
+    border: none;
+
+    &--left {
+      margin-right: 37px;
+    }
+  }
+
+  .feedback__author {
+    &--name {
+      font-size: 18px;
+      line-height: 24px;
+      color: @black;
+    }
+
+    &--email {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .feedback {
+    .wrapperContent();
+    margin-bottom: 67px;
+    padding: 0;
+  }
+
+  .feedback__wrapper {
+    padding-left: 174px;
+  }
+
+  .feedback__text {
+    padding-right: 107px;
+    padding-bottom: 49px;
   }
 }

@@ -53,7 +53,7 @@
   color: @black;
 
   &--type {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 }
 
@@ -68,4 +68,151 @@
   background-color: @white;
   font-size: 17px;
   line-height: 16px;
+  width: 100%;
+}
+
+@media (min-width: @tabletWidth) {
+  .form {
+    padding: 0;
+  }
+
+  .form__description {
+    padding: @wrapperPaddingTablet;
+    font-size: 17px;
+    line-height: 30px;
+    padding-bottom: 11px;
+    margin: 0;
+  }
+
+  .form__wrapper {
+    padding: 50px 52px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form__legend {
+    margin: 0;
+    width: 167px;
+    min-width: 167px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .form__label {
+    font-size: 19px;
+    line-height: 18px;
+
+    &--type:last-child {
+      padding-bottom: 0;
+    }
+
+    &--checkbox {
+      width: 50%;
+    }
+  }
+
+  .form__item {
+    margin-right: 28px;
+  }
+
+  .form__fieldset {
+    &--background {
+      background-color: @lightGrey;
+    }
+  }
+
+  .form__fieldset-label {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__name {
+    width: 100%;
+  }
+
+  .form__tel {
+    padding: @wrapperPaddingTablet;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &--email {
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+  }
+
+  .form__tetarea {
+    display: flex;
+  }
+
+  .form__button {
+    width: 230px;
+  }
+
+  .form__footnotes {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__add {
+    padding: @wrapperPaddingTablet;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .form__description {
+    .wrapperContent();
+    padding-left: 225px;
+  }
+
+  .form__wrapper {
+    .wrapperContent();
+    padding: 50px 52px;
+  }
+
+  .form__fieldset-label {
+    flex-direction: column;
+
+    &--checkbox {
+      flex-direction: row;
+    }
+  }
+
+  .form__label--checkbox {
+    width: 33.33%;
+  }
+
+  .form__tel {
+    .wrapperContent();
+    padding: 0 52px;
+    padding-top: 50px;
+
+    &--email {
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+  }
+
+  .form__add {
+    .wrapperContent();
+    padding-right: 50px;
+  }
+
+  .form__button {
+    margin-left: 225px;
+  }
+
+  .form {
+    padding-bottom: 50px;
+  }
 }
