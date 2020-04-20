@@ -9,6 +9,7 @@
     border: none;
     border-bottom: 2px solid @goshawkGrey;
     height: 52px;
+    width: 100%;
     font-size: 17px;
     line-height: 18px;
 
@@ -19,6 +20,10 @@
     &:hover,
     &:focus {
       border-color: @seaBlue;
+
+      + .label-form__icon {
+        fill: @seafoamBlue;
+      }
     }
   }
 
@@ -46,10 +51,10 @@
 }
 
 .label-form__icon {
-  fill-opacity: 0.2;
   position: absolute;
   top: 12px;
   right: 7px;
+  fill: @iconGrey;
 }
 
 @media (min-width: @tabletWidth) {

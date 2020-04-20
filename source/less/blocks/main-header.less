@@ -22,23 +22,50 @@
 }
 
 .main-header__item {
-  background-color: @seafoamBlue;
   height: 103px;
+}
+
+.main-header__link {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   padding: 0 30px;
+  background-color: @seafoamBlue;
 
   &--dark {
     background-color: @darkSeaBlue;
   }
+
+  &:active {
+    .main-header__link__text {
+      opacity: 0.3;
+    }
+  }
 }
 
-.main-header__item__icon {
+.main-header__link__icon {
   &::after {
     content: "";
     display: block;
     opacity: 0.5;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   &--lamp {
@@ -56,14 +83,6 @@
       height: 60px;
     }
   }
-}
-
-.main-header__link {
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
-  color: @white;
-  width: 50%;
 }
 
 @media (min-width: @tabletWidth) {
@@ -107,6 +126,11 @@
 @media (min-width: @desktopWidth) {
   .main-header {
     background-image: url("../img/hero-desktop@1x.jpg");
+
+    &::after {
+      background: url("../img/bg-zigzag-fill-desktop.svg") repeat;
+      height: 34px;
+    }
   }
 
   .main-header__wrapper {
@@ -121,6 +145,16 @@
 
   .main-header__title {
     .fontSizeDescktop();
-    padding-bottom: 305px;
+    padding-bottom: 300px;
+  }
+
+  .main-header__item {
+    height: 124px;
+    padding-top: 5px;
+    transition: padding-top 0.3s;
+
+    &:hover {
+      padding-top: 0;
+    }
   }
 }
