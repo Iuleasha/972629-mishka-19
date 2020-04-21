@@ -8,24 +8,29 @@
 }
 
 .social__item {
-  margin: 0 20px;
+  margin-right: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 23px;
   height: 28px;
 
-  &--instagram {
-    background: url("../img/insta-svg.svg") no-repeat center;
+  &--instagram:hover,
+  &--facebook:hover,
+  &--twitter:hover {
+    fill: @blueEmail;
   }
 
-  &--facebook {
-    background: url("../img/fb-svg.svg") no-repeat center;
-  }
-
-  &--twitter {
-    background: url("../img/twitter-svg.svg") no-repeat center;
+  &--instagram:active,
+  &--facebook:active,
+  &--twitter:active {
+    opacity: 0.3;
   }
 }
 

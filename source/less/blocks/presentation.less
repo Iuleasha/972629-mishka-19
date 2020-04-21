@@ -38,6 +38,8 @@
 }
 
 .presentation__button {
+  font-size: 17px;
+  line-height: 16px;
   margin: 0 34px 33px 34px;
   width: 192px;
   order: 4;
@@ -53,7 +55,14 @@
   .presentation__description {
     border-top: 1px solid #ececec;
     padding: 39px 42px 46px;
-    width: 367px;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 
   .presentation__wrapper {
@@ -87,6 +96,7 @@
 
   .presentation__description {
     border-top: none;
+    height: 455px;
   }
 
   .presentation__wrapper {
@@ -96,7 +106,7 @@
 
   .presentation__title {
     padding-top: 20px;
-    padding-right: 41px;
+    padding-right: 43px;
   }
 
   .presentation__video-wrapper {

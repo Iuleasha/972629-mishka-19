@@ -6,6 +6,8 @@
 
 .feedback__title {
   margin: 0;
+  font-size: 25px;
+  color: @black;
 }
 
 .feedback__item {
@@ -21,6 +23,8 @@
     font-size: 17px;
     font-weight: bold;
     font-style: inherit;
+    line-height: 24px;
+    color: @black;
   }
 
   &--email {
@@ -41,11 +45,25 @@
   background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  outline: none;
 
   &--right {
     transform: rotate(180deg);
     border-right: none;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.feedback__link {
+  font-size: 18px;
+  line-height: 20px;
 }
 
 @media (min-width: @tabletWidth) {
@@ -80,7 +98,6 @@
 
   .feedback__link {
     font-size: 17px;
-    line-height: 20px;
     order: 1;
     width: 175px;
   }
@@ -124,6 +141,10 @@
     .wrapperContent();
     margin-bottom: 67px;
     padding: 0;
+  }
+
+  .feedback__title {
+    .fontSizeDescktop();
   }
 
   .feedback__wrapper {

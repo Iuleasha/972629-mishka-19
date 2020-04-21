@@ -2,6 +2,10 @@
   background-color: @lightGrey;
 }
 
+.page-footer__link {
+  display: none;
+}
+
 .page-footer__content {
   padding: 25px 30px 23px;
 }
@@ -10,11 +14,20 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
+  color: @black;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 22px;
+
+  &:hover .page-footer__img {
+    fill: @blueEmail;
+  }
+
+  &:active .page-footer__img {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__img {
@@ -26,14 +39,24 @@
     padding: 51px 52px;
     display: flex;
     justify-content: space-between;
+  }
 
-    &--logo::before {
-      content: "";
-      display: block;
-      width: 102px;
-      height: 34px;
-      background: url("../img/logo-footer.svg") no-repeat;
-      margin-right: 80px;
+  .page-footer__link {
+    display: block;
+  }
+
+  .page-footer__link--img {
+    display: block;
+    width: 102px;
+    height: 34px;
+    margin-right: 80px;
+
+    &:hover {
+      fill: @blueEmail;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

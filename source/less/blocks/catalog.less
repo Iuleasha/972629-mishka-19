@@ -17,6 +17,14 @@
   font-weight: bold;
   line-height: 24px;
   color: @black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__item {
@@ -41,8 +49,18 @@
   justify-content: space-between;
   border-top: 1px solid @whiteTwo;
 
+
   &-link {
     opacity: 0.2;
+
+    &:hover {
+      fill: @seafoamBlue;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -61,6 +79,14 @@
   .catalog__item {
     display: flex;
     margin-bottom: 53px;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 
   .catalog__img-wrapper {
