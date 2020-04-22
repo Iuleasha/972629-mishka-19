@@ -1,6 +1,6 @@
 .presentation {
   margin: 0 30px 58px 30px;
-  border: 1px solid @whiteTwo;
+  box-shadow: inset 0 0 0 1px rgba(236, 236, 236, 1);
   display: flex;
   flex-direction: column;
 }
@@ -20,8 +20,33 @@
   order: 1;
 }
 
-.presentation__video {
+.presentation__video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 150px;
   order: 2;
+}
+
+.presentation__video {
+  background: url("../img/video-mobile@1x.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.presentation__video-btn {
+  background: url("../img/icon-play.svg") no-repeat center;
+  width: 101px;
+  height: 77px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.presentation__description {
+  order: 3;
 }
 
 .presentation__icon {
@@ -48,13 +73,22 @@
 @media (min-width: @tabletWidth) {
   .presentation {
     margin: @wrapperPaddingTablet;
-    align-items: center;
     margin-bottom: 63px;
   }
 
+  .presentation__video-wrapper {
+    height: 455px;
+    order: 1;
+  }
+
+  .presentation__video {
+    background: url("../img/video-tablet@1x.jpg") no-repeat center;
+    background-size: cover;
+  }
+
   .presentation__description {
-    border-top: 1px solid #ececec;
     padding: 39px 42px 46px;
+    border-top: none;
 
     &:hover {
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -66,8 +100,10 @@
   }
 
   .presentation__wrapper {
-    padding: 0;
-    padding-bottom: 40px;
+    padding-top: 39px;
+    padding-left: 52px;
+    padding-bottom: 0;
+    order: 2;
   }
 
   .presentation__title {
@@ -75,9 +111,9 @@
   }
 
   .presentation__text {
-    padding: 0;
     font-size: 15px;
     line-height: 30px;
+    padding: 0;
     padding-bottom: 40px;
   }
 
@@ -92,16 +128,25 @@
     .wrapperContent();
     flex-direction: row;
     margin-bottom: 105px;
+    position: relative;
   }
 
   .presentation__description {
     border-top: none;
     height: 455px;
+    order: 3;
+    padding-top: 180px;
+    padding-left: 79px;
   }
 
   .presentation__wrapper {
     flex-direction: column;
     align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: -24px;
+    width: 35%;
+    z-index: -1;
   }
 
   .presentation__title {
@@ -112,6 +157,19 @@
   .presentation__video-wrapper {
     min-width: 682px;
     height: 455px;
+  }
+
+  .presentation__video-btn {
+    outline: none;
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    &:active {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.5;
+    }
   }
 
   .presentation__button {
