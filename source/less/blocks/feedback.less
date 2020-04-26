@@ -73,6 +73,10 @@
     background-position: 0;
     background-size: auto 100%;
     padding: @wrapperPaddingTablet;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .feedback__wrapper {
@@ -135,6 +139,7 @@
     }
   }
 }
+
 
 @media (min-width: @desktopWidth) {
   .feedback {
