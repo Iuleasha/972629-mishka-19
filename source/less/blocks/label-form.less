@@ -3,6 +3,16 @@
   flex-direction: column;
   margin-bottom: 22px;
   position: relative;
+}
+
+.label-form__name {
+  align-items: flex-start;
+}
+
+.label-form__item {
+  &::placeholder {
+    opacity: 0.3;
+  }
 
   &--input {
     outline: none;
@@ -38,21 +48,12 @@
     height: 142px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
+    resize: none;
 
     &:hover,
     &:focus {
       border-color: @seaBlue;
     }
-  }
-}
-
-.label-form__name {
-  align-items: flex-start;
-}
-
-.label-form__item {
-  &::placeholder {
-    opacity: 0.3;
   }
 }
 
@@ -71,6 +72,12 @@
     width: 100%;
     margin-bottom: 24px;
 
+    &--margin {
+      margin-bottom: 0;
+    }
+  }
+
+  .label-form__item {
     &--input {
       width: 100%;
       font-size: 19px;
@@ -83,10 +90,6 @@
     &--text {
       margin: 0;
       background-color: @lightGrey;
-    }
-
-    &--margin {
-      margin-bottom: 0;
     }
 
     &--textarea {

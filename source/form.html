@@ -8,8 +8,13 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__link" href="index.html"></a>
-
+      <a class="page-header__link" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Логотип «Мишка»" width="86" height="35">
+        </picture>
+      </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -43,7 +48,7 @@
               <span>Поиск по сайту</span>
             </a>
           </li>
-          <li class="user-list__item main-nav__item--cart">
+          <li class="user-list__item">
             <a class="user-list__link" href="#">
               <svg
                 class="user-list__icon"
@@ -101,7 +106,7 @@
                   value="on"
                   id="type-1"
                 />
-                  <span class="form__label--radio"></span>
+                  <span class="form__label form__label--radio"></span>
                   <span>Аксессуар для интерьера</span>
                 </label>
                 <label class="form__label form__label--type" for="type-2">
@@ -112,7 +117,7 @@
                   value="off"
                   id="type-2"
                 />
-                  <span class="form__label--radio"></span>
+                  <span class="form__label form__label--radio"></span>
                   <span>Детская игрушка</span>
                 </label>
               </div>
@@ -132,7 +137,7 @@
                   name="white"
                   type="checkbox" id="color-1"
                 />
-                  <span class="form__label--checkbox"></span>
+                  <span class="form__label form__label--checkbox"></span>
                   <span>Белый</span>
                 </label>
                 <label
@@ -144,7 +149,7 @@
                   name="grey"
                   type="checkbox" id="color-2"
                 />
-                  <span class="form__label--checkbox"></span>
+                  <span class="form__label form__label--checkbox"></span>
                   <span>Серый</span>
                 </label>
                 <label
@@ -155,7 +160,7 @@
                   name="tiffany"
                   type="checkbox" id="color-3"
                 />
-                  <span class="form__label--checkbox"></span>
+                  <span class="form__label form__label--checkbox"></span>
                   <span>«Тиффани»</span>
                 </label>
                 <label
@@ -166,7 +171,7 @@
                   name="black"
                   type="checkbox" id="color-4"
                 />
-                  <span class="form__label--checkbox"></span>
+                  <span class="form__label form__label--checkbox"></span>
                   <span>Черный</span>
                 </label>
                 <label
@@ -177,7 +182,7 @@
                   name="pink"
                   type="checkbox" id="color-5"
                 />
-                  <span class="form__label--checkbox"></span>
+                  <span class="form__label form__label--checkbox"></span>
                   <span>Розовый</span>
                 </label>
                 <label
@@ -188,7 +193,7 @@
                   name="orange"
                   type="checkbox" id="color-6"
                 />
-                  <span class="form__label--checkbox"></span>
+                  <span class="form__label form__label--checkbox"></span>
                   <span>Оранжевый</span>
                 </label>
               </div>
@@ -202,7 +207,7 @@
                 <label class="form__label label-form label-form__name">
                   <span>Имя:</span>
                   <input
-                    class="label-form__item label-form--input"
+                    class="label-form__item label-form__item--input"
                     placeholder="Введите ваше имя*"
                     type="text"
                   />
@@ -210,7 +215,7 @@
                 <label class="form__label label-form label-form__name">
                   <span>Фамилия:</span>
                   <input
-                    class="label-form__item label-form--input"
+                    class="label-form__item label-form__item--input"
                     placeholder="Укажите фамилию*"
                     type="text"
                   />
@@ -218,7 +223,7 @@
                 <label class="form__label label-form label-form__name">
                   <span>Отчество:</span>
                   <input
-                    class="tlabel-form__item label-form--input"
+                    class="label-form__item label-form__item--input"
                     placeholder="Отчество, если желаете"
                     type="text"
                   />
@@ -232,7 +237,7 @@
               <legend class="form__legend form__legend--margin">тел</legend>
               <label class="form__label label-form">
                 <input
-                  class="label-form__item label-form--input label-form--text"
+                  class="label-form__item label-form__item--input label-form__item--text"
                   placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                   type="tel"
                 />
@@ -278,7 +283,7 @@
               <legend class="form__legend form__legend--line">E-mail</legend>
               <label class="form__label label-form">
                 <input
-                  class="label-form__item label-form--input label-form--text"
+                  class="label-form__item label-form__item--input label-form__item--text"
                   placeholder="Ваш Email*"
                   type="email"
                 />
@@ -310,7 +315,7 @@
               <legend class="form__legend">Доп</legend>
               <label class="form__label label-form label-form--margin">
                 <textarea
-                  class="label-form__item label-form--textarea"
+                  class="label-form__item label-form__item--textarea"
                   name="text"
                   placeholder="Опишите все ваши пожелания к заказу"
                 ></textarea>
@@ -334,7 +339,7 @@
       <div class="page-footer__content">
         <a class="page-footer__link" href="index.html">
           <svg
-            class="page-footer__link--img"
+            class="page-footer__logo"
             enable-background="new 0 0 101.615 34.056"
             height="34.056px"
             id="Layer_1"
@@ -376,7 +381,7 @@
           <li class="social__item">
             <a class="social__link" href="#" title="Instagram">
               <svg
-                class="social__link--instagram"
+                class="social__instagram"
                 height="21.334"
                 viewBox="53.115 53.19 21.769 21.334"
                 width="21.769"
@@ -391,7 +396,7 @@
           <li class="social__item">
             <a class="social__link" href="#" title="Facebook">
               <svg
-                class="social__link--facebook"
+                class="social__facebook"
                 height="27.718"
                 viewBox="56.519 49.996 14.962 27.718"
                 width="14.962"
@@ -406,7 +411,7 @@
           <li class="social__item">
             <a class="social__link" href="#" title="Twitter">
               <svg
-                class="social__link--twitter"
+                class="social__twitter"
                 height="20.168"
                 viewBox="52.253 53.771 23.494 20.168"
                 width="23.494"
@@ -421,12 +426,14 @@
         </ul>
 
         <a class="page-footer__developer" href="index.html"
-          >Разработано
+        >Разработано
           <svg
             class="page-footer__img"
             enable-background="new 0 0 26.943 34.09"
             fill="#63d1bb"
             height="34.09px"
+            id="Layer_1"
+            version="1.1"
             viewBox="0 0 26.943 34.09"
             width="26.943px"
             x="0px"
@@ -444,5 +451,6 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

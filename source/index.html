@@ -8,8 +8,13 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__link" href="index.html"></a>
-
+      <a class="page-header__link" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img alt="Логотип «Мишка»" height="35" src="img/logo-mobile.svg" width="86">
+        </picture>
+      </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -17,7 +22,7 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html"
-              ><span>Каталог товаров</span></a
+            ><span>Каталог товаров</span></a
             >
           </li>
           <li class="site-list__item">
@@ -43,7 +48,7 @@
               <span>Поиск по сайту</span>
             </a>
           </li>
-          <li class="user-list__item main-nav__item--cart">
+          <li class="user-list__item">
             <a class="user-list__link" href="#">
               <svg
                 class="user-list__icon"
@@ -130,13 +135,19 @@
             </tr>
           </table>
         </div>
-        <img
-          alt="Ассортимент вязанных корзинок"
-          class="goods-of-week__image"
-          height="315"
-          src="img/triple-set-mobile@1x.jpg"
-          width="260"
-        />
+        <picture>
+          <source media="(min-width: 1150px)"
+                  srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img
+            alt="Ассортимент вязанных корзинок"
+            class="goods-of-week__image"
+            height="315"
+            src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+            width="260"
+          />
+        </picture>
         <p class="goods-of-week__price">Цена: 990 руб.</p>
         <a class="btn goods-of-week__button" href="#">Заказать</a>
       </section>
@@ -226,10 +237,10 @@
                 фотографии сразу стали более стильными, а также набирают больше
                 лайков!
               </p>
-              <cite class="feedback__author--name"
+              <cite class="feedback__author feedback__author--name"
                 >Анастасия Красильникова</cite
               >
-              <p class="feedback__author--email">@misssssiskras</p>
+              <p class="feedback__author feedback__author--email">@misssssiskras</p>
             </blockquote>
             <div class="feedback__wrapper-btn">
               <button
@@ -286,7 +297,7 @@
       <div class="page-footer__content">
         <a class="page-footer__link" href="index.html">
           <svg
-            class="page-footer__link--img"
+            class="page-footer__logo"
             enable-background="new 0 0 101.615 34.056"
             height="34.056px"
             id="Layer_1"
@@ -328,7 +339,7 @@
           <li class="social__item">
             <a class="social__link" href="#" title="Instagram">
               <svg
-                class="social__link--instagram"
+                class="social__instagram"
                 height="21.334"
                 viewBox="53.115 53.19 21.769 21.334"
                 width="21.769"
@@ -343,7 +354,7 @@
           <li class="social__item">
             <a class="social__link" href="#" title="Facebook">
               <svg
-                class="social__link--facebook"
+                class="social__facebook"
                 height="27.718"
                 viewBox="56.519 49.996 14.962 27.718"
                 width="14.962"
@@ -358,7 +369,7 @@
           <li class="social__item">
             <a class="social__link" href="#" title="Twitter">
               <svg
-                class="social__link--twitter"
+                class="social__twitter"
                 height="20.168"
                 viewBox="52.253 53.771 23.494 20.168"
                 width="23.494"
@@ -417,5 +428,6 @@
     </div>
   </div>
     <script src="js/scripts.js"></script>
+  <script src="js/picturefill.js"></script>
   </body>
 </html>
