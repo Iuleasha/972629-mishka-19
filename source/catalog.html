@@ -7,59 +7,55 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-
-
-  <header class="page-header">
-    <a class="page-header__link" href="index.html">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img alt="Логотип «Мишка»" height="35" src="img/logo-mobile.svg" width="86">
-      </picture>
-    </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html"
-          ><span>Каталог товаров</span></a
-          >
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html"
-          ><span>Вязание на заказ</span></a
-          >
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item user-list__item--padding">
-          <a class="user-list__link" href="#">
-            <svg
-              class="user-list__icon"
-              height="17.6"
-              width="17.6">
-              <use xlink:href="img/sprite.svg#loupe"></use>
-            </svg>
-            <span>Поиск по сайту</span>
-          </a>
-        </li>
-        <li class="user-list__item">
-          <a class="user-list__link" href="#">
-            <svg
-              class="user-list__icon"
-              height="18.849"
-              width="20.294"
+    <header class="page-header">
+      <a class="page-header__link" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" />
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+          <img
+            alt="Логотип «Мишка»"
+            height="35"
+            src="img/logo-mobile.svg"
+            width="86"
+          />
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html"
+              ><span>Каталог товаров</span></a
             >
-              <use xlink:href="img/sprite.svg#cart"></use>
-            </svg>
-            <span>Корзина: пока пуста</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html"
+              ><span>Вязание на заказ</span></a
+            >
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--padding">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" height="17.6" width="17.6">
+                <use xlink:href="img/sprite.svg#loupe"></use>
+              </svg>
+              <span>Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" height="18.849" width="20.294">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+              <span>Корзина: пока пуста</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="subtitle">
         <div class="subtitle__wrapper">
@@ -83,18 +79,44 @@
           <li class="catalog__item">
             <a class="catalog__img-wrapper" href="#">
               <picture>
-                <source media="(min-width: 1150px)"
-                        srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x"
-                        type="image/webp">
-                <source media="(min-width: 768px)"
-                        srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x"
-                        type="image/webp">
-                <source srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x" type="image/webp">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/photo-hare-desktop@1x.webp 1x,
+                    img/photo-hare-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-hare-tablet@1x.webp 1x,
+                    img/photo-hare-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    img/photo-hare-mobile@1x.webp 1x,
+                    img/photo-hare-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
 
-                <source media="(min-width: 1150px)"
-                        srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                        srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/photo-hare-desktop@1x.jpg 1x,
+                    img/photo-hare-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-hare-tablet@1x.jpg 1x,
+                    img/photo-hare-tablet@2x.jpg 2x
+                  "
+                />
                 <img
                   alt="Зайчик-попрыгайчик"
                   class="catalog__img"
@@ -113,10 +135,7 @@
               <div class="catalog__cart">
                 <span class="catalog__price">1 200 руб.</span>
                 <a class="catalog__cart-link" href="#">
-                  <svg
-                    height="18.849"
-                    width="20.294"
-                  >
+                  <svg height="18.849" width="20.294">
                     <use xlink:href="img/sprite.svg#cart"></use>
                   </svg>
                 </a>
@@ -126,24 +145,51 @@
           <li class="catalog__item">
             <a class="catalog__img-wrapper" href="#">
               <picture>
-                <source media="(min-width: 1150px)"
-                        srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x"
-                        type="image/webp">
-                <source media="(min-width: 768px)"
-                        srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x"
-                        type="image/webp">
-                <source srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x" type="image/webp">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/photo-bowl-desktop@1x.webp 1x,
+                    img/photo-bowl-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-bowl-tablet@1x.webp 1x,
+                    img/photo-bowl-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    img/photo-bowl-mobile@1x.webp 1x,
+                    img/photo-bowl-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
 
-                <source media="(min-width: 1150px)"
-                        srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                        srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/photo-bowl-desktop@1x.jpg 1x,
+                    img/photo-bowl-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-bowl-tablet@1x.jpg 1x,
+                    img/photo-bowl-tablet@2x.jpg 2x
+                  "
+                />
                 <img
                   alt="Корзинка для белья"
                   class="catalog__img"
                   height="195"
                   src="img/photo-bowl-mobile@1x.jpg"
-                  srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260"
+                  srcset="img/photo-bowl-mobile@2x.jpg 2x"
+                  width="260"
                 />
               </picture>
             </a>
@@ -155,10 +201,7 @@
               <div class="catalog__cart">
                 <span class="catalog__price">690 руб.</span>
                 <a class="catalog__cart-link" href="#">
-                  <svg
-                    height="18.849"
-                    width="20.294"
-                  >
+                  <svg height="18.849" width="20.294">
                     <use xlink:href="img/sprite.svg#cart"></use>
                   </svg>
                 </a>
@@ -168,23 +211,50 @@
           <li class="catalog__item">
             <a class="catalog__img-wrapper" href="#">
               <picture>
-                <source media="(min-width: 1150px)"
-                        srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x"
-                        type="image/webp">
-                <source media="(min-width: 768px)"
-                        srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x"
-                        type="image/webp">
-                <source srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x" type="image/webp">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/photo-toys-desktop@1x.webp 1x,
+                    img/photo-toys-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-toys-tablet@1x.webp 1x,
+                    img/photo-toys-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    img/photo-toys-mobile@1x.webp 1x,
+                    img/photo-toys-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
 
-                <source media="(min-width: 1150px)"
-                        srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                        srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/photo-toys-desktop@1x.jpg 1x,
+                    img/photo-toys-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-toys-tablet@1x.jpg 1x,
+                    img/photo-toys-tablet@2x.jpg 2x
+                  "
+                />
                 <img
                   alt="Большая корзинка для игрушек"
                   class="catalog__img"
                   height="195"
-                  src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x"
+                  src="img/photo-toys-mobile@1x.jpg"
+                  srcset="img/photo-toys-mobile@2x.jpg 2x"
                   width="260"
                 />
               </picture>
@@ -200,10 +270,7 @@
               <div class="catalog__cart">
                 <span class="catalog__price">1 500 руб.</span>
                 <a class="catalog__cart-link" href="#">
-                  <svg
-                    height="18.849"
-                    width="20.294"
-                  >
+                  <svg height="18.849" width="20.294">
                     <use xlink:href="img/sprite.svg#cart"></use>
                   </svg>
                 </a>
@@ -216,19 +283,40 @@
       <section class="presentation">
         <div class="presentation__video-wrapper">
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x"
-                    type="image/webp">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x"
-                    type="image/webp">
-            <source srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x" type="image/webp">
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                img/video-desktop@1x.webp 1x,
+                img/video-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x"
+              type="image/webp"
+            />
 
-            <source media="(min-width: 1150px)"
-                    srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-                    srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img alt="Декоративная корзина" class="presentation__video" height="150" src="img/video-mobile@1x.jpg"
-                srcset="img/video-mobile@2x.jpg 2x"
-                width="260">
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x"
+            />
+            <img
+              alt="Декоративная корзина"
+              class="presentation__video"
+              height="150"
+              src="img/video-mobile@1x.jpg"
+              srcset="img/video-mobile@2x.jpg 2x"
+              width="260"
+            />
           </picture>
           <button class="presentation__video-btn" type="button"></button>
         </div>
@@ -248,67 +336,47 @@
       </section>
     </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__content">
-      <a class="page-footer__link" href="index.html">
-        <svg
-          class="page-footer__logo"
-          height="34.056px"
-          width="101.615px"
-        >
-          <use xlink:href="img/sprite.svg#logo-footer"></use>
-        </svg>
-      </a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="#" title="Instagram">
-            <svg
-              class="social__instagram"
-              height="21.334"
-              width="21.769"
-            >
-              <use xlink:href="img/sprite.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" title="Facebook">
-            <svg
-              class="social__facebook"
-              height="27.718"
-              width="14.962"
-            >
-              <use xlink:href="img/sprite.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" title="Twitter">
-            <svg
-              class="social__twitter"
-              height="20.168"
-              width="23.494"
-            >
-              <use xlink:href="img/sprite.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+    <footer class="page-footer">
+      <div class="page-footer__content">
+        <a class="page-footer__link" href="index.html">
+          <svg class="page-footer__logo" height="34.056px" width="101.615px">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" title="Instagram">
+              <svg class="social__instagram" height="21.334" width="21.769">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Facebook">
+              <svg class="social__facebook" height="27.718" width="14.962">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Twitter">
+              <svg class="social__twitter" height="20.168" width="23.494">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
 
-      <a class="page-footer__developer" href="index.html"
-      >Разработано
-        <svg
-          class="page-footer__img"
-          height="34.09px"
-          width="26.943px"
-        >
-          <use xlink:href="img/sprite.svg#footer-img"></use>
-        </svg>
-      </a>
-    </div>
-  </footer>
+        <a class="page-footer__developer" href="index.html"
+          >Разработано
+          <svg class="page-footer__img" height="34.09px" width="26.943px">
+            <use xlink:href="img/sprite.svg#footer-img"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
-  <script src="js/picturefill.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

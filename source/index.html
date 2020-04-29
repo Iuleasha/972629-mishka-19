@@ -7,81 +7,77 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-
-
-  <header class="page-header">
-    <a class="page-header__link" href="index.html">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img alt="Логотип «Мишка»" height="35" src="img/logo-mobile.svg" width="86">
-      </picture>
-    </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html"
-          ><span>Каталог товаров</span></a
-          >
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html"
-          ><span>Вязание на заказ</span></a
-          >
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item user-list__item--padding">
-          <a class="user-list__link" href="#">
-            <svg
-              class="user-list__icon"
-              height="17.6"
-              width="17.6">
-              <use xlink:href="img/sprite.svg#loupe"></use>
-            </svg>
-            <span>Поиск по сайту</span>
-          </a>
-        </li>
-        <li class="user-list__item">
-          <a class="user-list__link" href="#">
-            <svg
-              class="user-list__icon"
-              height="18.849"
-              width="20.294"
+    <header class="page-header">
+      <a class="page-header__link" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" />
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+          <img
+            alt="Логотип «Мишка»"
+            height="35"
+            src="img/logo-mobile.svg"
+            width="86"
+          />
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html"
+              ><span>Каталог товаров</span></a
             >
-              <use xlink:href="img/sprite.svg#cart"></use>
-            </svg>
-            <span>Корзина: пока пуста</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html"
+              ><span>Вязание на заказ</span></a
+            >
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--padding">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" height="17.6" width="17.6">
+                <use xlink:href="img/sprite.svg#loupe"></use>
+              </svg>
+              <span>Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" height="18.849" width="20.294">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+              <span>Корзина: пока пуста</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="main-page">
-    <section class="main-header">
-      <div class="main-header__wrapper">
-        <div class="product">
-          <ul class="product__list">
-            <li class="product__offer">
-              <a class="product__link" href="#">Новые поступления</a>
-            </li>
-            <li class="product__offer">
-              <a class="product__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <p class="product__text">Бесплатная доставка по России</p>
-        </div>
-        <h1 class="main-header__title">
-          Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома
-        </h1>
-        <ul class="main-header__list">
-          <li class="main-header__item">
-            <a
-              class="main-header__link main-header__link__icon main-header__link__icon--lamp"
+    <main class="main-page">
+      <section class="main-header">
+        <div class="main-header__wrapper">
+          <div class="product">
+            <ul class="product__list">
+              <li class="product__offer">
+                <a class="product__link" href="#">Новые поступления</a>
+              </li>
+              <li class="product__offer">
+                <a class="product__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <p class="product__text">Бесплатная доставка по России</p>
+          </div>
+          <h1 class="main-header__title">
+            Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома
+          </h1>
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a
+                class="main-header__link main-header__link__icon main-header__link__icon--lamp"
                 href="#"
                 ><span class="main-header__link__text"
                   >Предметы<br />
@@ -129,22 +125,50 @@
           </table>
         </div>
         <picture>
-          <source media="(min-width: 1150px)"
-                  srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x"
-                  type="image/webp">
-          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x"
-                  type="image/webp">
-          <source srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x" type="image/webp">
+          <source
+            media="(min-width: 1150px)"
+            srcset="
+              img/triple-set-desktop@1x.webp 1x,
+              img/triple-set-desktop@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              img/triple-set-tablet@1x.webp 1x,
+              img/triple-set-tablet@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              img/triple-set-mobile@1x.webp 1x,
+              img/triple-set-mobile@2x.webp 2x
+            "
+            type="image/webp"
+          />
 
-          <source media="(min-width: 1150px)"
-                  srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)"
-                  srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <source
+            media="(min-width: 1150px)"
+            srcset="
+              img/triple-set-desktop@1x.jpg 1x,
+              img/triple-set-desktop@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              img/triple-set-tablet@1x.jpg 1x,
+              img/triple-set-tablet@2x.jpg 2x
+            "
+          />
           <img
             alt="Ассортимент вязанных корзинок"
             class="goods-of-week__image"
             height="315"
-            src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+            src="img/triple-set-mobile@1x.jpg"
+            srcset="img/triple-set-mobile@2x.jpg 2x"
             width="260"
           />
         </picture>
@@ -240,7 +264,9 @@
               <cite class="feedback__author feedback__author--name"
                 >Анастасия Красильникова</cite
               >
-              <p class="feedback__author feedback__author--email">@misssssiskras</p>
+              <p class="feedback__author feedback__author--email">
+                @misssssiskras
+              </p>
             </blockquote>
             <div class="feedback__wrapper-btn">
               <button
@@ -291,88 +317,84 @@
         </div>
         <a href="#" class="contacts__button btn">Напишите нам</a>
       </section>
-  </main>
+    </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__content">
-      <a class="page-footer__link" href="index.html">
-        <svg
-          class="page-footer__logo"
-          height="34.056px"
-          width="101.615px"
-        >
-          <use xlink:href="img/sprite.svg#logo-footer"></use>
-        </svg>
-      </a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="#" title="Instagram">
-            <svg
-              class="social__instagram"
-              height="21.334"
-              width="21.769"
-            >
-              <use xlink:href="img/sprite.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" title="Facebook">
-            <svg
-              class="social__facebook"
-              height="27.718"
-              width="14.962"
-            >
-              <use xlink:href="img/sprite.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" title="Twitter">
-            <svg
-              class="social__twitter"
-              height="20.168"
-              width="23.494"
-            >
-              <use xlink:href="img/sprite.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+    <footer class="page-footer">
+      <div class="page-footer__content">
+        <a class="page-footer__link" href="index.html">
+          <svg class="page-footer__logo" height="34.056px" width="101.615px">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" title="Instagram">
+              <svg class="social__instagram" height="21.334" width="21.769">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Facebook">
+              <svg class="social__facebook" height="27.718" width="14.962">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Twitter">
+              <svg class="social__twitter" height="20.168" width="23.494">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
 
-      <a class="page-footer__developer" href="index.html"
-      >Разработано
-        <svg
-          class="page-footer__img"
-          height="34.09px"
-          width="26.943px"
-        >
-          <use xlink:href="img/sprite.svg#footer-img"></use>
-        </svg>
-      </a>
+        <a class="page-footer__developer" href="index.html"
+          >Разработано
+          <svg class="page-footer__img" height="34.09px" width="26.943px">
+            <use xlink:href="img/sprite.svg#footer-img"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <div class="pop-up visually-hidden">
+      <div class="pop-up__content">
+        <h2 class="pop-up__tittle">Добавить в&nbsp;корзину</h2>
+
+        <form class="pop-up__list" action="#" method="post">
+          <fieldset class="pop-up__fieldset">
+            <legend class="pop-up__text">Выберите размер:</legend>
+            <div class="pop-up__wrapper">
+              <input
+                class="pop-up__input visually-hidden"
+                type="radio"
+                id="s"
+                name="size"
+                checked
+              />
+              <label class="pop-up__label" for="s">s</label>
+              <input
+                class="pop-up__input visually-hidden"
+                type="radio"
+                id="m"
+                name="size"
+              />
+              <label class="pop-up__label" for="m">m</label>
+              <input
+                class="pop-up__input visually-hidden"
+                type="radio"
+                id="l"
+                name="size"
+              />
+              <label class="pop-up__label" for="l">l</label>
+            </div>
+          </fieldset>
+        </form>
+        <button class="btn pop-up__btn" type="button">Добавить</button>
+      </div>
     </div>
-  </footer>
-  <div class="pop-up visually-hidden">
-    <div class="pop-up__content">
-    <h2 class="pop-up__tittle">Добавить в&nbsp;корзину</h2>
-
-    <form class="pop-up__list" action="#" method="post">
-      <fieldset class="pop-up__fieldset">
-        <legend class="pop-up__text">Выберите размер:</legend>
-        <div class="pop-up__wrapper">
-          <input class="pop-up__input visually-hidden" type="radio" id="s" name="size" checked>
-      <label class="pop-up__label" for="s">s</label>
-          <input class="pop-up__input visually-hidden" type="radio" id="m" name="size">
-        <label class="pop-up__label" for="m">m</label>
-          <input class="pop-up__input visually-hidden" type="radio" id="l" name="size">
-          <label class="pop-up__label" for="l">l</label>
-        </div>
-        </fieldset>
-    </form>
-    <button class="btn pop-up__btn" type="button">Добавить</button>
-    </div>
-  </div>
     <script src="js/scripts.js"></script>
-  <script src="js/picturefill.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
