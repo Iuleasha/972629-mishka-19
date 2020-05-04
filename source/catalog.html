@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -31,7 +31,7 @@
       <li class="user-list__item user-list__item--padding">
         <a class="user-list__link" href="#">
           <svg class="user-list__icon" height="17.6" width="17.6">
-            <use xlink:href="img/sprite.svg#loupe"></use>
+            <use xlink:href="img/sprite.svg#icon-search"></use>
           </svg>
           <span>Поиск по сайту</span>
         </a>
@@ -39,7 +39,7 @@
       <li class="user-list__item">
         <a class="user-list__link" href="#">
           <svg class="user-list__icon" height="18.849" width="20.294">
-            <use xlink:href="img/sprite.svg#cart"></use>
+            <use xlink:href="img/sprite.svg#icon-cart"></use>
           </svg>
           <span>Корзина: пока пуста</span>
         </a>
@@ -87,7 +87,7 @@
             <span class="catalog__price">1 200 руб.</span>
             <a class="catalog__cart-link" href="#">
               <svg height="18.849" width="20.294">
-                <use xlink:href="img/sprite.svg#cart"></use>
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
             </a>
           </div>
@@ -113,7 +113,7 @@
             <span class="catalog__price">690 руб.</span>
             <a class="catalog__cart-link" href="#">
               <svg height="18.849" width="20.294">
-                <use xlink:href="img/sprite.svg#cart"></use>
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
             </a>
           </div>
@@ -139,7 +139,7 @@
             <span class="catalog__price">1 500 руб.</span>
             <a class="catalog__cart-link" href="#">
               <svg height="18.849" width="20.294">
-                <use xlink:href="img/sprite.svg#cart"></use>
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
             </a>
           </div>
@@ -162,7 +162,7 @@
     </div>
     <div class="presentation__wrapper">
       <svg class="presentation__icon" height="32px" width="32px">
-        <use xlink:href="#camera"></use>
+        <use xlink:href="img/sprite.svg#icon-video"></use>
       </svg>
       <h2 class="presentation__title">Процесс производства</h2>
     </div>
@@ -177,28 +177,28 @@
   <div class="page-footer__content">
     <a class="page-footer__link" href="index.html">
       <svg class="page-footer__logo" height="34.056px" width="101.615px">
-        <use xlink:href="img/sprite.svg#logo-footer"></use>
+        <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
       </svg>
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">
         <a class="social__link" href="#" title="Instagram">
           <svg class="social__instagram" height="21.334" width="21.769">
-            <use xlink:href="img/sprite.svg#instagram"></use>
+            <use xlink:href="img/sprite.svg#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="#" title="Facebook">
           <svg class="social__facebook" height="27.718" width="14.962">
-            <use xlink:href="img/sprite.svg#facebook"></use>
+            <use xlink:href="img/sprite.svg#icon-fb"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="#" title="Twitter">
           <svg class="social__twitter" height="20.168" width="23.494">
-            <use xlink:href="img/sprite.svg#twitter"></use>
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
       </li>
@@ -206,11 +206,15 @@
 
     <a class="page-footer__developer" href="index.html">Разработано
       <svg class="page-footer__img" height="34.09px" width="26.943px">
-        <use xlink:href="img/sprite.svg#footer-img"></use>
+        <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
       </svg>
     </a>
   </div>
 </footer>
+
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
 
 <script src="js/scripts.js"></script>
 <script src="js/picturefill.js"></script>
