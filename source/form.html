@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
   <a class="page-header__link" href="index.html">
     <picture>
-      <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg"/>
-      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"/>
-      <img
-        alt="Логотип «Мишка»"
-        height="35"
-        src="img/logo-mobile.svg"
-        width="86"
-      />
+      <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+      <img alt="Логотип «Мишка»" height="35" src="img/logo-mobile.svg" width="86">
     </picture>
   </a>
   <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -26,14 +21,10 @@
     </button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
-        <a class="site-list__link" href="catalog.html"
-        ><span>Каталог товаров</span></a
-        >
+        <a class="site-list__link" href="catalog.html"><span>Каталог товаров</span></a>
       </li>
       <li class="site-list__item">
-        <a class="site-list__link" href="form.html"
-        ><span>Вязание на заказ</span></a
-        >
+        <a class="site-list__link" href="form.html"><span>Вязание на заказ</span></a>
       </li>
     </ul>
     <ul class="main-nav__list user-list">
@@ -77,35 +68,19 @@
   <section>
     <form action="https://echo.htmlacademy.ru" class="form" method="get">
       <h2 class="visually-hidden">Форма заказа</h2>
-      <p class="form__description">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
-        форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-      </p>
+      <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
       <fieldset class="form__fieldset form__fieldset--radio">
         <div class="form__wrapper">
           <legend class="form__legend">Тип</legend>
           <div class="form__fieldset-label form__fieldset-label--radio">
             <label class="form__label form__label--type" for="type-1">
-              <input
-                checked
-                class="form__item form__item--radio visually-hidden"
-                id="type-1"
-                name="type"
-                type="radio"
-                value="on"
-              />
+              <input checked class="form__item form__item--radio visually-hidden" id="type-1" name="type" type="radio" value="on">
               <span class="form__label form__label--radio"></span>
               <span>Аксессуар для интерьера</span>
             </label>
             <label class="form__label form__label--type" for="type-2">
-              <input
-                class="form__item form__item--radio visually-hidden"
-                id="type-2"
-                name="type"
-                type="radio"
-                value="off"
-              />
+              <input class="form__item form__item--radio visually-hidden" id="type-2" name="type" type="radio" value="off">
               <span class="form__label form__label--radio"></span>
               <span>Детская игрушка</span>
             </label>
@@ -117,83 +92,34 @@
         <div class="form__wrapper">
           <legend class="form__legend">Цвет</legend>
           <div class="form__fieldset-label form__fieldset-label--checkbox">
-            <label
-              class="form__label form__label--type form__label--item"
-              for="color-1"
-            >
-              <input
-                checked
-                class="form__item form__item--checkbox visually-hidden"
-                id="color-1"
-                name="white"
-                type="checkbox"
-              />
+            <label class="form__label form__label--type form__label--item" for="color-1">
+              <input checked class="form__item form__item--checkbox visually-hidden" id="color-1" name="white" type="checkbox">
               <span class="form__label form__label--checkbox"></span>
               <span>Белый</span>
             </label>
-            <label
-              class="form__label form__label--type form__label--item"
-              for="color-2"
-            >
-              <input
-                checked
-                class="form__item form__item--checkbox visually-hidden"
-                id="color-2"
-                name="grey"
-                type="checkbox"
-              />
+            <label class="form__label form__label--type form__label--item" for="color-2">
+              <input checked class="form__item form__item--checkbox visually-hidden" id="color-2" name="grey" type="checkbox">
               <span class="form__label form__label--checkbox"></span>
               <span>Серый</span>
             </label>
-            <label
-              class="form__label form__label--type form__label--item"
-              for="color-3"
-            >
-              <input
-                class="form__item form__item--checkbox visually-hidden"
-                id="color-3"
-                name="tiffany"
-                type="checkbox"
-              />
+            <label class="form__label form__label--type form__label--item" for="color-3">
+              <input class="form__item form__item--checkbox visually-hidden" id="color-3" name="tiffany" type="checkbox">
               <span class="form__label form__label--checkbox"></span>
               <span>«Тиффани»</span>
             </label>
-            <label
-              class="form__label form__label--type form__label--item"
-              for="color-4"
-            >
-              <input
-                class="form__item form__item--checkbox visually-hidden"
-                id="color-4"
-                name="black"
-                type="checkbox"
-              />
+            <label class="form__label form__label--type form__label--item" for="color-4">
+              <input class="form__item form__item--checkbox visually-hidden" id="color-4" name="black" type="checkbox">
               <span class="form__label form__label--checkbox"></span>
               <span>Черный</span>
             </label>
-            <label
-              class="form__label form__label--type form__label--item"
-              for="color-5"
-            >
-              <input
-                class="form__item form__item--checkbox visually-hidden"
-                id="color-5"
-                name="pink"
-                type="checkbox"
-              />
+            <label class="form__label form__label--type form__label--item" for="color-5">
+              <input class="form__item form__item--checkbox visually-hidden" id="color-5" name="pink" type="checkbox">
               <span class="form__label form__label--checkbox"></span>
               <span>Розовый</span>
             </label>
-            <label
-              class="form__label form__label--type form__label--item"
-              for="color-6"
-            >
-              <input
-                class="form__item form__item--checkbox visually-hidden"
-                id="color-6"
-                name="orange"
-                type="checkbox"
-              />
+            <label class="form__label form__label--type form__label--item" for="color-6">
+              <input class="form__item form__item--checkbox visually-hidden" id="color-6" name="orange" type="checkbox"
+              >
               <span class="form__label form__label--checkbox"></span>
               <span>Оранжевый</span>
             </label>
@@ -207,27 +133,18 @@
           <div class="form__name">
             <label class="form__label label-form label-form__name">
               <span>Имя:</span>
-              <input
-                class="label-form__item label-form__item--input"
-                placeholder="Введите ваше имя*"
-                type="text"
-              />
+              <input class="label-form__item label-form__item--input" placeholder="Введите ваше имя*" type="text"
+              >
             </label>
             <label class="form__label label-form label-form__name">
               <span>Фамилия:</span>
-              <input
-                class="label-form__item label-form__item--input"
-                placeholder="Укажите фамилию*"
-                type="text"
-              />
+              <input class="label-form__item label-form__item--input" placeholder="Укажите фамилию*" type="text"
+              >
             </label>
             <label class="form__label label-form label-form__name">
               <span>Отчество:</span>
-              <input
-                class="label-form__item label-form__item--input"
-                placeholder="Отчество, если желаете"
-                type="text"
-              />
+              <input class="label-form__item label-form__item--input" placeholder="Отчество, если желаете" type="text"
+              >
             </label>
           </div>
         </div>
@@ -237,16 +154,9 @@
         <div class="form__tel">
           <legend class="form__legend form__legend--margin">тел</legend>
           <label class="form__label label-form">
-            <input
-              class="label-form__item label-form__item--input label-form__item--text"
-              placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-              type="tel"
-            />
-            <svg
-              class="label-form__icon"
-              height="24.333px"
-              width="24.829px"
+            <input class="label-form__item label-form__item--input label-form__item--text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel"
             >
+            <svg class="label-form__icon" height="24.333px" width="24.829px">
               <use xlink:href="img/sprite.svg#form-phone"></use>
             </svg>
           </label>
@@ -257,11 +167,7 @@
         <div class="form__tel form__tel--email">
           <legend class="form__legend form__legend--line">E-mail</legend>
           <label class="form__label label-form">
-            <input
-              class="label-form__item label-form__item--input label-form__item--text"
-              placeholder="Ваш Email*"
-              type="email"
-            />
+            <input class="label-form__item label-form__item--input label-form__item--text" placeholder="Ваш Email*" type="email">
             <svg class="label-form__icon" height="32px" width="32px">
               <use xlink:href="img/sprite.svg#form-letter"></use>
             </svg>
@@ -273,19 +179,13 @@
         <div class="form__wrapper">
           <legend class="form__legend">Доп</legend>
           <label class="form__label label-form label-form--margin">
-                <textarea
-                  class="label-form__item label-form__item--textarea"
-                  name="text"
-                  placeholder="Опишите все ваши пожелания к заказу"
-                ></textarea>
+                <textarea class="label-form__item label-form__item--textarea" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </div>
       </fieldset>
 
       <div class="form__add">
-        <small class="form__footnotes"
-        >*Поля обязательны для заполнения</small
-        >
+        <small class="form__footnotes">*Поля обязательны для заполнения</small>
         <button class="form__button btn" type="submit">
           Отправить заказ
         </button>
@@ -325,8 +225,7 @@
       </li>
     </ul>
 
-    <a class="page-footer__developer" href="index.html"
-    >Разработано
+    <a class="page-footer__developer" href="index.html">Разработано
       <svg class="page-footer__img" height="34.09px" width="26.943px">
         <use xlink:href="img/sprite.svg#footer-img"></use>
       </svg>
