@@ -31,7 +31,7 @@
       <li class="user-list__item user-list__item--padding">
         <a class="user-list__link" href="#">
           <svg class="user-list__icon" height="17.6" width="17.6">
-            <use xlink:href="img/sprite.svg#icon-search"></use>
+            <use xlink:href="#icon-search"></use>
           </svg>
           <span>Поиск по сайту</span>
         </a>
@@ -39,7 +39,7 @@
       <li class="user-list__item">
         <a class="user-list__link" href="#">
           <svg class="user-list__icon" height="18.849" width="20.294">
-            <use xlink:href="img/sprite.svg#icon-cart"></use>
+            <use xlink:href="#icon-cart"></use>
           </svg>
           <span>Корзина: пока пуста</span>
         </a>
@@ -68,11 +68,12 @@
   <section>
     <form action="https://echo.htmlacademy.ru" class="form" method="get">
       <h2 class="visually-hidden">Форма заказа</h2>
-      <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
 
-      <fieldset class="form__fieldset form__fieldset--radio">
+      <div class="form__fieldset form__fieldset--radio">
         <div class="form__wrapper">
-          <legend class="form__legend">Тип</legend>
+          <h3 class="form__legend">Тип</h3>
           <div class="form__fieldset-label form__fieldset-label--radio">
             <label class="form__label form__label--type" for="type-1">
               <input checked="" class="form__item form__item--radio visually-hidden" id="type-1" name="type" type="radio" value="on">
@@ -86,11 +87,11 @@
             </label>
           </div>
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset class="form__fieldset form__fieldset--background">
+      <div class="form__fieldset form__fieldset--background">
         <div class="form__wrapper">
-          <legend class="form__legend">Цвет</legend>
+          <h3 class="form__legend">Цвет</h3>
           <div class="form__fieldset-label form__fieldset-label--checkbox">
             <label class="form__label form__label--type form__label--item" for="color-1">
               <input checked="" class="form__item form__item--checkbox visually-hidden" id="color-1" name="white" type="checkbox">
@@ -124,11 +125,11 @@
             </label>
           </div>
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset class="form__fieldset form__fieldset--name">
+      <div class="form__fieldset form__fieldset--name">
         <div class="form__wrapper">
-          <legend class="form__legend">фио</legend>
+          <h3 class="form__legend">фио</h3>
           <div class="form__name">
             <label class="form__label label-form label-form__name">
               <span>Имя:</span>
@@ -144,40 +145,41 @@
             </label>
           </div>
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset class="form__fieldset form__fieldset--background">
-        <div class="form__tel">
-          <legend class="form__legend form__legend--margin">тел</legend>
+      <div class="form__fieldset--background">
+        <div class="form__fieldset  form__tel">
+          <h3 class="form__legend form__legend--margin">тел</h3>
           <label class="form__label label-form">
             <input class="label-form__item label-form__item--input label-form__item--text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel">
             <svg class="label-form__icon" height="24.333px" width="24.829px">
-              <use xlink:href="img/sprite.svg#icon-phone"></use>
+              <use xlink:href="#icon-phone"></use>
             </svg>
           </label>
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset class="form__fieldset form__fieldset--background">
+      <div class="form__fieldset form__fieldset--background">
         <div class="form__tel form__tel--email">
-          <legend class="form__legend form__legend--line">E-mail</legend>
+          <h3 class="form__legend form__legend--line">E-mail</h3>
           <label class="form__label label-form">
-            <input class="label-form__item label-form__item--input label-form__item--text" placeholder="Ваш Email*" type="email">
+            <input class="label-form__item label-form__item--input label-form__item--text" placeholder="Ваш Email*"  type="email">
             <svg class="label-form__icon" height="32px" width="32px">
-              <use xlink:href="img/sprite.svg#icon-mail"></use>
+              <use xlink:href="#icon-mail"></use>
             </svg>
           </label>
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset class="form__fieldset">
+      <div class="form__fieldset">
         <div class="form__wrapper">
-          <legend class="form__legend">Доп</legend>
+          <h3 class="form__legend">Доп</h3>
           <label class="form__label label-form label-form--margin">
-                <textarea class="label-form__item label-form__item--textarea" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="label-form__item label-form__item--textarea" name="text"
+                      placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </div>
-      </fieldset>
+      </div>
 
       <div class="form__add">
         <small class="form__footnotes">*Поля обязательны для заполнения</small>
@@ -193,28 +195,28 @@
   <div class="page-footer__content">
     <a class="page-footer__link" href="index.html">
       <svg class="page-footer__logo" height="34.056px" width="101.615px">
-        <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+        <use xlink:href="#icon-logo-footer"></use>
       </svg>
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">
         <a class="social__link" href="#" title="Instagram">
           <svg class="social__instagram" height="21.334" width="21.769">
-            <use xlink:href="img/sprite.svg#icon-insta"></use>
+            <use xlink:href="#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="#" title="Facebook">
           <svg class="social__facebook" height="27.718" width="14.962">
-            <use xlink:href="img/sprite.svg#icon-fb"></use>
+            <use xlink:href="#icon-fb"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="#" title="Twitter">
           <svg class="social__twitter" height="20.168" width="23.494">
-            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            <use xlink:href="#icon-twitter"></use>
           </svg>
         </a>
       </li>
@@ -222,7 +224,7 @@
 
     <a class="page-footer__developer" href="index.html">Разработано
       <svg class="page-footer__img" height="34.09px" width="26.943px">
-        <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
+        <use xlink:href="#icon-logo-htmlacademy"></use>
       </svg>
     </a>
   </div>
