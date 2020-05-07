@@ -2,11 +2,17 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>HTML Academy: Мишка</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+
 <header class="page-header">
   <a class="page-header__link" href="index.html">
     <picture>
@@ -47,6 +53,7 @@
     </ul>
   </nav>
 </header>
+
 <main>
   <section class="subtitle">
     <div class="subtitle__wrapper">
@@ -229,10 +236,6 @@
     </a>
   </div>
 </footer>
-
-<div style="display: none">
-  <include src="build/img/sprite.svg"></include>
-</div>
 
 <script src="js/scripts.js"></script>
 <script src="js/picturefill.js"></script>
