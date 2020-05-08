@@ -83,12 +83,12 @@
           <h3 class="form__legend">Тип</h3>
           <div class="form__fieldset-label form__fieldset-label--radio">
             <label class="form__label form__label--type" for="type-1">
-              <input checked="" class="form__item form__item--radio visually-hidden" id="type-1" name="type" type="radio" value="on">
+              <input checked="" class="form__item form__item--radio visually-hidden" id="type-1" name="type" type="radio" value="Аксессуар для интерьера">
               <span class="form__label form__label--radio"></span>
               <span>Аксессуар для интерьера</span>
             </label>
             <label class="form__label form__label--type" for="type-2">
-              <input class="form__item form__item--radio visually-hidden" id="type-2" name="type" type="radio" value="off">
+              <input class="form__item form__item--radio visually-hidden" id="type-2" name="type" type="radio" value="Детская игрушка">
               <span class="form__label form__label--radio"></span>
               <span>Детская игрушка</span>
             </label>
@@ -140,15 +140,15 @@
           <div class="form__name">
             <label class="form__label label-form label-form__name">
               <span>Имя:</span>
-              <input class="label-form__item label-form__item--input" placeholder="Введите ваше имя*" type="text">
+              <input class="label-form__item label-form__item--input" name="firstname" placeholder="Введите ваше имя*" type="text">
             </label>
             <label class="form__label label-form label-form__name">
               <span>Фамилия:</span>
-              <input class="label-form__item label-form__item--input" placeholder="Укажите фамилию*" type="text">
+              <input class="label-form__item label-form__item--input" name="lastname" placeholder="Укажите фамилию*" type="text">
             </label>
             <label class="form__label label-form label-form__name">
               <span>Отчество:</span>
-              <input class="label-form__item label-form__item--input" placeholder="Отчество, если желаете" type="text">
+              <input class="label-form__item label-form__item--input" name="surname" placeholder="Отчество, если желаете" type="text">
             </label>
           </div>
         </div>
@@ -158,7 +158,8 @@
         <div class="form__fieldset  form__tel">
           <h3 class="form__legend form__legend--margin">тел</h3>
           <label class="form__label label-form">
-            <input class="label-form__item label-form__item--input label-form__item--text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel">
+            <span class="visually-hidden">Телефон</span>
+            <input class="label-form__item label-form__item--input label-form__item--text" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" pattern="^[0-9-+\s()]*$">
             <svg class="label-form__icon" height="24.333px" width="24.829px">
               <use xlink:href="#icon-phone"></use>
             </svg>
@@ -170,7 +171,8 @@
         <div class="form__tel form__tel--email">
           <h3 class="form__legend form__legend--line">E-mail</h3>
           <label class="form__label label-form">
-            <input class="label-form__item label-form__item--input label-form__item--text" placeholder="Ваш Email*"  type="email">
+            <span class="visually-hidden">E-mail</span>
+            <input class="label-form__item label-form__item--input label-form__item--text" name="email" placeholder="Ваш Email*"  type="email">
             <svg class="label-form__icon" height="32px" width="32px">
               <use xlink:href="#icon-mail"></use>
             </svg>
@@ -182,6 +184,7 @@
         <div class="form__wrapper">
           <h3 class="form__legend">Доп</h3>
           <label class="form__label label-form label-form--margin">
+            <span class="visually-hidden">Дополнительные пожелания к заказу</span>
             <textarea class="label-form__item label-form__item--textarea" name="text"
                       placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
@@ -200,36 +203,35 @@
 
 <footer class="page-footer">
   <div class="page-footer__content">
-    <a class="page-footer__link" href="index.html">
+    <a class="page-footer__link" href="source/index.html" title="Главная страница'Мишка'">
       <svg class="page-footer__logo" height="34.056px" width="101.615px">
         <use xlink:href="#icon-logo-footer"></use>
       </svg>
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">
-        <a class="social__link" href="#" title="Instagram">
+        <a class="social__link" href="https://www.instagram.com/" title="Instagram">
           <svg class="social__instagram" height="21.334" width="21.769">
             <use xlink:href="#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#" title="Facebook">
+        <a class="social__link" href="https://www.facebook.com/" title="Facebook">
           <svg class="social__facebook" height="27.718" width="14.962">
             <use xlink:href="#icon-fb"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#" title="Twitter">
+        <a class="social__link" href="https://twitter.com/" target="_blank" title="Twitter">
           <svg class="social__twitter" height="20.168" width="23.494">
             <use xlink:href="#icon-twitter"></use>
           </svg>
         </a>
       </li>
     </ul>
-
-    <a class="page-footer__developer" href="index.html">Разработано
+    <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Academy">Разработано
       <svg class="page-footer__img" height="34.09px" width="26.943px">
         <use xlink:href="#icon-logo-htmlacademy"></use>
       </svg>
@@ -237,7 +239,7 @@
   </div>
 </footer>
 
-<script src="js/scripts.js"></script>
 <script src="js/picturefill.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

@@ -115,7 +115,7 @@
       <img alt="Ассортимент вязанных корзинок" class="goods-of-week__image" height="315" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260">
     </picture>
     <p class="goods-of-week__price">Цена: 990 руб.</p>
-    <a class="btn goods-of-week__button" href="#">Заказать</a>
+    <a class="btn goods-of-week__button add-to-cart" href="#">Заказать</a>
   </section>
 
   <section class="advantages">
@@ -165,11 +165,11 @@
           <p class="feedback__author feedback__author--email">@misssssiskras</p>
         </blockquote>
         <div class="feedback__wrapper-btn">
-          <button class="feedback__button feedback__button--left" type="button"></button>
-          <button class="feedback__button feedback__button--right" type="button"></button>
+          <button class="feedback__button feedback__button--left" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+          <button class="feedback__button feedback__button--right" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
         </div>
       </div>
-      <a class="feedback__link btn" href="#">Написать</a>
+      <a class="feedback__link btn" href="feedback.html">Написать</a>
     </div>
   </section>
 
@@ -201,42 +201,62 @@
 
 <footer class="page-footer">
   <div class="page-footer__content">
-    <a class="page-footer__link" href="index.html">
+    <a class="page-footer__link" href="source/index.html" title="Главная страница'Мишка'">
       <svg class="page-footer__logo" height="34.056px" width="101.615px">
         <use xlink:href="#icon-logo-footer"></use>
       </svg>
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">
-        <a class="social__link" href="#" title="Instagram">
+        <a class="social__link" href="https://www.instagram.com/" title="Instagram">
           <svg class="social__instagram" height="21.334" width="21.769">
             <use xlink:href="#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#" title="Facebook">
+        <a class="social__link" href="https://www.facebook.com/" title="Facebook">
           <svg class="social__facebook" height="27.718" width="14.962">
             <use xlink:href="#icon-fb"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#" title="Twitter">
+        <a class="social__link" href="https://twitter.com/" target="_blank" title="Twitter">
           <svg class="social__twitter" height="20.168" width="23.494">
             <use xlink:href="#icon-twitter"></use>
           </svg>
         </a>
       </li>
     </ul>
-
-    <a class="page-footer__developer" href="index.html">Разработано
+    <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Academy">Разработано
       <svg class="page-footer__img" height="34.09px" width="26.943px">
         <use xlink:href="#icon-logo-htmlacademy"></use>
       </svg>
     </a>
   </div>
 </footer>
+
+<div class="pop-up pop-up--hide">
+  <div class="pop-up__content">
+    <h2 class="pop-up__tittle">Добавить в&nbsp;корзину</h2>
+
+    <form action="#" class="pop-up__list" method="post">
+      <fieldset class="pop-up__fieldset">
+        <legend class="pop-up__text">Выберите размер:</legend>
+        <div class="pop-up__wrapper">
+          <input checked class="pop-up__input visually-hidden" id="s" name="size" type="radio">
+          <label class="pop-up__label" for="s">s</label>
+          <input class="pop-up__input visually-hidden" id="m" name="size" type="radio">
+          <label class="pop-up__label" for="m">m</label>
+          <input class="pop-up__input visually-hidden" id="l" name="size" type="radio">
+          <label class="pop-up__label" for="l">l</label>
+        </div>
+      </fieldset>
+    </form>
+    <button class="btn pop-up__btn" type="button">Добавить</button>
+  </div>
+</div>
 
 <script src="js/picturefill.js"></script>
 <script src="js/scripts.js"></script>
