@@ -9,14 +9,15 @@
   text-align: center;
   margin: 0;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 76px;
 }
 
 @media (min-width: @tabletWidth) {
   .subtitle {
     padding: @wrapperPaddingTablet;
     position: relative;
-    margin-bottom: 67px;
+    margin-bottom: 70px;
+    border-top: 1px solid @whiteTwo;
 
     &::after {
       content: "";
@@ -33,13 +34,14 @@
 
   .subtitle__text {
     .fontSize();
-    padding-bottom: 89px;
+    padding-top: 54px;
+    padding-bottom: 80px;
   }
 }
 
 @media (min-width: @desktopWidth) {
   .subtitle {
-    margin-bottom: 111px;
+    margin-bottom: 120px;
 
     &::after {
       background: url("../img/bg-zigzag-fill-desktop.svg") repeat center;
@@ -54,6 +56,6 @@
 
   .subtitle__text {
     .fontSizeDescktop();
-    padding-bottom: 116px;
+    padding-bottom: 102px;
   }
 }

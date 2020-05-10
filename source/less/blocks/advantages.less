@@ -17,20 +17,22 @@
   margin-bottom: 28px;
 }
 
+.advantages__icon {
+  height: 37px;
+}
+
 .advantages__description {
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   color: @black;
   margin: 0;
-  padding-top: 28px;
+  padding-top: 18px;
 }
 
 @media (min-width: @tabletWidth) {
   .advantages {
-    padding: @wrapperPaddingTablet;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding: 47px 48px 20px;
     max-width: 768px;
     margin: 0 auto;
   }
@@ -81,11 +83,15 @@
   .advantages {
     .wrapperContent();
     padding: 0 175px 29px;
-    margin-top: 70px;
+    margin-top: 60px;
   }
 
   .advantages__title {
     .fontSizeDescktop();
-    padding-bottom: 44px;
+    padding-bottom: 48px;
+  }
+
+  .advantages__description {
+    padding-top: 16px;
   }
 }
