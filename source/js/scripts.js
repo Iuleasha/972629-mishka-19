@@ -33,8 +33,10 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-popupAdd.addEventListener('click', function (evt) {
-  evt.preventDefault();
+if (popupAdd !== null) {
+  popupAdd.addEventListener('click', function (evt) {
+    evt.preventDefault();
 
-  popup.classList.add('pop-up--hide');
-});
+    popup.classList.add('pop-up--hide');
+  });
+}
