@@ -1,12 +1,12 @@
 .label-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 22px;
   position: relative;
 }
 
 .label-form__name {
   align-items: flex-start;
+  margin-bottom: 22px;
 }
 
 .label-form__item {
@@ -43,7 +43,7 @@
     border: 2px solid @goshawkGrey;
     font-size: 17px;
     line-height: 18px;
-    padding: 18px 17px;
+    padding: 12px 14px;
     width: 100%;
     height: 142px;
     font-family: "Open Sans", "Arial", sans-serif;
@@ -59,7 +59,7 @@
 
 .label-form__icon {
   position: absolute;
-  top: 12px;
+  top: 34px;
   right: 7px;
   fill: @iconGrey;
 }
@@ -67,7 +67,7 @@
 @media (min-width: @tabletWidth) {
   .label-form {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     width: 100%;
     margin-bottom: 24px;
@@ -95,6 +95,21 @@
     &--textarea {
       font-size: 19px;
       font-weight: normal;
+      max-width: 700px;
     }
+  }
+
+  .label-form__icon {
+    top: 12px;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .label-form__name {
+    margin-bottom: 22px;
+  }
+
+  .label-form__icon {
+    right: 4px;
   }
 }

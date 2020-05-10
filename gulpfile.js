@@ -81,7 +81,7 @@ gulp.task('server', function () {
     ui: false
   });
 
-  gulp.watch('source/less/**/*.less', gulp.series('css'));
+  gulp.watch('source/less/**/*.less').on('change', gulp.series('css', 'refresh'));
   gulp.watch('source/img/icon-*.svg').on('change', gulp.series('sprite', 'html', 'refresh'));
   gulp.watch('source/*.html').on('change', gulp.series('html', 'refresh'));
   gulp.watch('source/**/*.js').on('change', gulp.series('js', 'refresh'));

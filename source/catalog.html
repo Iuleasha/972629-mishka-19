@@ -55,7 +55,7 @@
   </nav>
 </header>
 
-<main>
+<main class="main-wrapper">
   <section class="subtitle">
     <div class="subtitle__wrapper">
       <div class="product">
@@ -99,7 +99,7 @@
           </div>
           <div class="catalog__cart">
             <span class="catalog__price">1 200 руб.</span>
-            <a class="catalog__cart-link" href="#">
+            <a class="catalog__cart-link add-to-cart" href="#" title="Положить в корзину">
               <svg height="18.849" width="20.294">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -130,7 +130,7 @@
           </div>
           <div class="catalog__cart">
             <span class="catalog__price">690 руб.</span>
-            <a class="catalog__cart-link" href="#">
+            <a class="catalog__cart-link add-to-cart" href="#" title="Положить в корзину">
               <svg height="18.849" width="20.294">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -162,7 +162,7 @@
           <div class="catalog__cart">
             <span class="catalog__price">1 500 руб.
             </span>
-            <a class="catalog__cart-link" href="#">
+            <a class="catalog__cart-link add-to-cart" href="#" title="Положить в корзину">
               <svg height="18.849" width="20.294">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -186,7 +186,7 @@
         <img alt="Декоративная корзина" class="presentation__video" height="150" src="img/video-mobile@1x.jpg"
               srcset="img/video-mobile@2x.jpg 2x" width="260">
       </picture>
-      <button class="presentation__video-btn" type="button"></button>
+      <button class="presentation__video-btn" type="button"><span class="visually-hidden">Запустить видео</span></button>
     </div>
     <div class="presentation__wrapper">
       <svg class="presentation__icon" height="32px" width="32px">
@@ -204,35 +204,35 @@
 
 <footer class="page-footer">
   <div class="page-footer__content">
-    <a class="page-footer__link" href="index.html">
+    <a class="page-footer__link" href="source/index.html" title="Главная страница'Мишка'">
       <svg class="page-footer__logo" height="34.056px" width="101.615px">
         <use xlink:href="#icon-logo-footer"></use>
       </svg>
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">
-        <a class="social__link" href="#" title="Instagram">
+        <a class="social__link" href="https://www.instagram.com/" title="Instagram">
           <svg class="social__instagram" height="21.334" width="21.769">
             <use xlink:href="#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#" title="Facebook">
+        <a class="social__link" href="https://www.facebook.com/" title="Facebook">
           <svg class="social__facebook" height="27.718" width="14.962">
             <use xlink:href="#icon-fb"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#" title="Twitter">
+        <a class="social__link" href="https://twitter.com/" target="_blank" title="Twitter">
           <svg class="social__twitter" height="20.168" width="23.494">
             <use xlink:href="#icon-twitter"></use>
           </svg>
         </a>
       </li>
     </ul>
-    <a class="page-footer__developer" href="index.html">Разработано
+    <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Academy">Разработано
       <svg class="page-footer__img" height="34.09px" width="26.943px">
         <use xlink:href="#icon-logo-htmlacademy"></use>
       </svg>
@@ -261,7 +261,7 @@
   </div>
 </div>
 
-<script src="js/scripts.js"></script>
 <script src="js/picturefill.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

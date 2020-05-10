@@ -1,6 +1,6 @@
 var mainNav = document.querySelector('.main-nav');
 var mainToggle = document.querySelector('.main-nav__toggle');
-var addToCart = document.querySelectorAll('.catalog__cart-link');
+var addToCart = document.querySelectorAll('.add-to-cart');
 var popup = document.querySelector('.pop-up');
 var popupAdd = document.querySelector('.pop-up__btn');
 

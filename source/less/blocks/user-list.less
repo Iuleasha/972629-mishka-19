@@ -37,7 +37,7 @@
 }
 
 .user-list__icon {
-  margin-right: 25px;
+  margin-right: 21px;
   opacity: 0.2;
 }
 
@@ -49,9 +49,14 @@
     padding-left: 25px;
   }
 
+  .user-list__link {
+    padding-left: 32px;
+  }
+
   .user-list__item {
     height: 88px;
     border-right: none;
+    font-size: 17px;
 
     &:first-of-type {
       width: 82px;
@@ -60,9 +65,17 @@
         display: block;
         width: 0;
         height: 0;
-        opacity: 0; /* Для скрин-ридера добавила, по-другому не знаю как*/
+        opacity: 0;
       }
     }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .user-list__icon {
+    margin-right: 25px;
   }
 }
 
