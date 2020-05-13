@@ -1,6 +1,9 @@
 .user-list__link {
   padding-left: 30px;
   color: @black;
+  width: 320px;
+  display: flex;
+  align-items: center;
 
   &:hover {
     span {
@@ -19,39 +22,38 @@
 }
 
 .user-list__item {
-  border: 1px solid @whiteTwo;
-  border-bottom: none;
-  height: 79px;
-  padding-left: 45px;
+  border-top: 1px solid @whiteTwo;
+  min-height: 79px;
   align-items: center;
   display: flex;
-
-  &--padding {
-    padding-left: 0;
-  }
-
-  &:last-child {
-    border-bottom: 1px solid @whiteTwo;
-    padding-left: 0;
-  }
+  justify-content: center;
 }
 
 .user-list__icon {
-  margin-right: 25px;
+  margin-right: 21px;
   opacity: 0.2;
+  min-width: 20px;
 }
 
 @media (min-width: @tabletWidth) {
   .user-list {
     display: flex;
     order: 1;
-    justify-content: flex-end;
-    padding-left: 25px;
+    max-width: 400px;
+    flex-wrap: wrap;
+  }
+
+  .user-list__link {
+    padding-left: 32px;
+    width: auto;
   }
 
   .user-list__item {
-    height: 88px;
-    border-right: none;
+    min-height: 88px;
+    border: none;
+    border-left: 1px solid @whiteTwo;
+    font-size: 17px;
+    max-width: 316px;
 
     &:first-of-type {
       width: 82px;
@@ -60,9 +62,18 @@
         display: block;
         width: 0;
         height: 0;
-        opacity: 0; /* Для скрин-ридера добавила, по-другому не знаю как*/
+        opacity: 0;
       }
     }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .user-list__icon {
+    margin-right: 25px;
+    min-width: 20px;
   }
 }
 

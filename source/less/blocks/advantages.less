@@ -15,6 +15,70 @@
 
 .advantages__item {
   margin-bottom: 28px;
+
+  &--first {
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/feature-flower.svg");
+      height: 37px;
+      width: 32px;
+    }
+  }
+
+  &--second {
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/feature-money.svg");
+      height: 27px;
+      width: 47px;
+    }
+  }
+
+  &--third {
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/feature-heart.svg");
+      height: 28px;
+      width: 33px;
+    }
+  }
+
+  &--fourth {
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/feature-ball.svg");
+      height: 34px;
+      width: 34px;
+    }
+  }
+
+  &--fifth {
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/feature-rocket.svg");
+      height: 23px;
+      width: 54px;
+    }
+  }
+
+  &--sixth {
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/feature-gift.svg");
+      height: 32px;
+      width: 33px;
+    }
+  }
+}
+
+.advantages__icon {
+  height: 37px;
 }
 
 .advantages__description {
@@ -23,14 +87,12 @@
   line-height: 20px;
   color: @black;
   margin: 0;
-  padding-top: 28px;
+  padding-top: 18px;
 }
 
 @media (min-width: @tabletWidth) {
   .advantages {
-    padding: @wrapperPaddingTablet;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding: 47px 48px 20px;
     max-width: 768px;
     margin: 0 auto;
   }
@@ -81,11 +143,15 @@
   .advantages {
     .wrapperContent();
     padding: 0 175px 29px;
-    margin-top: 70px;
+    margin-top: 60px;
   }
 
   .advantages__title {
     .fontSizeDescktop();
-    padding-bottom: 44px;
+    padding-bottom: 48px;
+  }
+
+  .advantages__description {
+    padding-top: 16px;
   }
 }

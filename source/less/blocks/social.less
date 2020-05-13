@@ -8,7 +8,7 @@
 }
 
 .social__item {
-  margin-right: 40px;
+  margin-right: 37px;
 
   &:last-of-type {
     margin-right: 0;
@@ -22,16 +22,16 @@
   height: 28px;
 }
 
-.social__instagram:hover,
-.social__facebook:hover,
-.social__twitter:hover {
-  fill: @blueEmail;
-}
+.social__instagram,
+.social__facebook,
+.social__twitter {
+  &:hover {
+    fill: @blueEmail;
+  }
 
-.social__instagram:active,
-.social__facebook:active,
-.social__twitter:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tabletWidth) {

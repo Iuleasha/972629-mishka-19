@@ -1,7 +1,5 @@
 .feedback {
-  .zigzagLine();
-  padding: @wrapperPadding;
-  padding-top: 7px;
+  padding: 0 30px 50px;
 }
 
 .feedback__title {
@@ -15,7 +13,7 @@
 }
 
 .feedback__text {
-  margin: 38px 0 40px;
+  margin: 24px 0 26px;
 }
 
 .feedback__author {
@@ -33,7 +31,7 @@
 }
 
 .feedback__wrapper-btn {
-  margin: 36px 0 38px;
+  margin: 30px 0 36px;
   display: flex;
 }
 
@@ -42,7 +40,7 @@
   background-color: @white;
   width: 50%;
   height: 52px;
-  background-image: url("../img/icon-left-arrow.svg");
+  background-image: url("../img/left-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   outline: none;
@@ -52,7 +50,8 @@
     border-right: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -64,18 +63,28 @@
 .feedback__link {
   font-size: 18px;
   line-height: 20px;
+  margin: auto;
 }
 
 @media (min-width: @tabletWidth) {
   .feedback {
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0;
-    background-size: auto 100%;
+    position: relative;
     padding: @wrapperPaddingTablet;
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/review@2x.jpg");
+    &::before {
+      display: block;
+      content: "";
+      width: 350px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: @whiteTwo url("../img/review@1x.jpg") no-repeat center right;
+      background-size: 100% auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
     }
   }
 
@@ -85,8 +94,8 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding-top: 79px;
-    padding-bottom: 53px;
+    padding-top: 75px;
+    padding-bottom: 50px;
   }
 
   .feedback__title {
@@ -96,7 +105,7 @@
   .feedback__text {
     font-size: 17px;
     margin: 0;
-    padding-top: 53px;
+    padding-top: 42px;
     padding-bottom: 58px;
   }
 
@@ -104,6 +113,7 @@
     font-size: 17px;
     order: 1;
     width: 175px;
+    margin: 0;
   }
 
   .feedback__list {
@@ -147,16 +157,23 @@
     padding: 0;
   }
 
+  .feedback__link {
+    margin-top: 8px;
+  }
+
   .feedback__title {
     .fontSizeDescktop();
   }
 
   .feedback__wrapper {
-    padding-left: 174px;
+    padding: 70px 0 96px 174px;
   }
 
   .feedback__text {
-    padding-right: 107px;
-    padding-bottom: 49px;
+    padding: 42px 104px 36px 0;
+  }
+
+  .feedback__wrapper-btn {
+    bottom: 110px;
   }
 }

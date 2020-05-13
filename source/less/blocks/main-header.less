@@ -17,7 +17,7 @@
   font-weight: bold;
   text-align: center;
   margin: 0;
-  padding: 76px 30px 120px;
+  padding: 71px 30px 107px;
   color: @darkBrown;
 }
 
@@ -40,7 +40,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 0 30px;
+  padding: 0 28px;
   background-color: @seafoamBlue;
 
   &--dark {
@@ -74,8 +74,10 @@
   }
 
   &--lamp {
+    padding-right: 36px;
+
     &::after {
-      background-image: url("../img/icon-interior.svg");
+      background-image: url("../img/interior.svg");
       width: 40px;
       height: 62px;
     }
@@ -83,7 +85,7 @@
 
   &--lego {
     &::after {
-      background-image: url("../img/icon-toy.svg");
+      background-image: url("../img/toy.svg");
       width: 60px;
       height: 60px;
     }
@@ -99,9 +101,8 @@
     &::after {
       content: "";
       display: block;
-      background: url("../img/bg-zigzag-fill.svg") repeat;
-      background-position: center;
-      background-size: cover;
+      background: url("../img/bg-zigzag-fill.svg") repeat center;
+      background-size: auto 100%;
       width: 100%;
       height: 24px;
       position: absolute;
@@ -117,7 +118,7 @@
 
   .main-header__title {
     .fontSize();
-    padding-top: 110px;
+    padding-top: 112px;
     padding-bottom: 370px;
   }
 
@@ -125,6 +126,10 @@
     margin-top: 0;
     display: flex;
     justify-content: center;
+  }
+
+  .main-header__link {
+    padding: 0 36px;
   }
 
   .main-header__item {
@@ -140,6 +145,9 @@
     &::after {
       background: url("../img/bg-zigzag-fill-desktop.svg") repeat;
       height: 34px;
+      bottom: -18px;
+      background-position: center;
+      background-size: 1250px 34px;
     }
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -160,7 +168,7 @@
 
   .main-header__title {
     .fontSizeDescktop();
-    padding-bottom: 351px;
+    padding-bottom: 353px;
   }
 
   .main-header__link {

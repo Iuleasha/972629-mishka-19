@@ -1,7 +1,6 @@
 .page-header {
   background-color: @white;
   padding-top: 22px;
-  border-bottom: 1px solid @whiteTwo;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +9,7 @@
 }
 
 .page-header__link {
-  margin-bottom: 22px;
+  margin-bottom: 13px;
 
   img {
     width: 86px;
@@ -26,20 +25,23 @@
     justify-content: space-between;
     align-items: start;
     padding-top: 0;
+    border: none;
   }
 
   .page-header__link {
     margin-bottom: 0;
     position: absolute;
     top: 22px;
-    left: 52px;
+    left: 48px;
 
-    &:hover {
-      opacity: 0.6;
-    }
+    &[href] {
+      &:hover {
+        opacity: 0.6;
+      }
 
-    &:active {
-      opacity: 0.3;
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     img {
@@ -54,6 +56,8 @@
   .page-header {
     .wrapperContent();
     padding: 0;
+    height: auto;
+    min-height: 88px;
   }
 
   .page-header__link {
